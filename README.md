@@ -1,6 +1,7 @@
 <h1 align="center"> 42_libft </h1>
 
-<img src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="Testando Funções!" />
+<img width="100%" src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="Testando Funções!" />
+
 
 ## :memo: Descrição
 45 funções em C básicas para se trabalhar com a linguagem como por exemplo: atoi,strcpy,substr.
