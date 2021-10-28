@@ -4,10 +4,56 @@
 
 
 ## :memo: Descrição
-45 funções em C básicas para se trabalhar com a linguagem como por exemplo: atoi,strcpy,substr.
+This project aims to code a C library regrouping usual functions that you’ll
+be allowed to use in all your other projects.
 
 ## :books: Funcionalidades
-* 45 funções.
+Mandatory:
+* isalpha
+• isdigit
+• isalnum
+• isascii
+• isprint
+• strlen
+• memset
+• bzero
+• memcpy
+• memmove
+• strlcpy
+• strlcat
+• toupper
+• tolower
+• strchr
+• strrchr
+• strncmp
+• memchr
+• memcmp
+• strnstr
+• atoi
+• calloc
+• strdup
+* ft_substr 
+* ft_strjoin
+* ft_strtrim
+* ft_split
+* ft_itoa
+* ft_strmapi
+* ft_striteri
+* ft_putchar_fd
+* ft_putstr_fd
+* ft_putendl_fd
+* ft_putnbr_fd
+Bonus:
+* ft_lstnew
+* ft_lstadd_front
+* ft_lstsize
+* ft_lstlast
+* ft_lstadd_back
+* ft_lstdelone
+* ft_lstclear
+* ft_lstiter
+* ft_lstmap
+
 
 ## :wrench: Tecnologias utilizadas
 <div style="display: inline_block"><br>
