@@ -10,28 +10,28 @@ be allowed to use in all your other projects.
 ## :books: Funcionalidades
 Mandatory:
 * isalpha
-• isdigit
-• isalnum
-• isascii
-• isprint
-• strlen
-• memset
-• bzero
-• memcpy
-• memmove
-• strlcpy
-• strlcat
-• toupper
-• tolower
-• strchr
-• strrchr
-• strncmp
-• memchr
-• memcmp
-• strnstr
-• atoi
-• calloc
-• strdup
+*  isdigit
+*  isalnum
+*  isascii
+*  isprint
+*  strlen
+*  memset
+*  bzero
+*  memcpy
+*  memmove
+*  strlcpy
+*  strlcat
+*  toupper
+*  tolower
+*  strchr
+*  strrchr
+*  strncmp
+*  memchr
+*  memcmp
+*  strnstr
+*  atoi
+*  calloc
+*  strdup
 * ft_substr 
 * ft_strjoin
 * ft_strtrim
@@ -43,6 +43,7 @@ Mandatory:
 * ft_putstr_fd
 * ft_putendl_fd
 * ft_putnbr_fd
+
 Bonus:
 * ft_lstnew
 * ft_lstadd_front
