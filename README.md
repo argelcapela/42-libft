@@ -51,7 +51,7 @@ Mandatory:<br>
 </ul>
 <br>
 Bonus:<br>
-<ul>
+
 <li>ft_lstnew</li>
 <li>ft_lstadd_front</li>
 <li>ft_lstsize</li>
@@ -61,7 +61,7 @@ Bonus:<br>
 <li>ft_lstclear</li>
 <li>ft_lstiter</li>
 <li>ft_lstmap</li>
-</ul>
+
 
 </div>
 <div class="row">
