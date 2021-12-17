@@ -74,13 +74,13 @@ Bonus:<br>
 <div class="row">
 
 ## :rocket: Rodando o projeto<br>
-* Por enquanto, sem tutorial.
+    <li> Por enquanto, sem tutorial.</li>
     
    </div>
 <div class="row">
 
 ## :soon: Implementação futura<br>
-* Nada em mente por enquanto.
+    <li>Nada em mente por enquanto.</li>
 </div>
 <div class="row">
     
@@ -102,7 +102,7 @@ Bonus:<br>
 <div class="row">
     
 ## :dart: Status do projeto<br>
-* Entregue com pontuação 120%.
+    <li>Entregue com pontuação 120%.</li>
     </div>
 <div class="row">
 
