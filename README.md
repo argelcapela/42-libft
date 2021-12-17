@@ -1,75 +1,91 @@
+<div class="hide-on-portfolio">
 <h1 align="center"> 42_libft </h1>
-
-<img width="100%" src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="Testando Funções!" />
-
 
 ## :memo: Descrição
 This project aims to code a C library regrouping usual functions that you’ll
 be allowed to use in all your other projects.
-
-## :books: Funcionalidades
-Mandatory:
-* isalpha
-*  isdigit
-*  isalnum
-*  isascii
-*  isprint
-*  strlen
-*  memset
-*  bzero
-*  memcpy
-*  memmove
-*  strlcpy
-*  strlcat
-*  toupper
-*  tolower
-*  strchr
-*  strrchr
-*  strncmp
-*  memchr
-*  memcmp
-*  strnstr
-*  atoi
-*  calloc
-*  strdup
-* ft_substr 
-* ft_strjoin
-* ft_strtrim
-* ft_split
-* ft_itoa
-* ft_strmapi
-* ft_striteri
-* ft_putchar_fd
-* ft_putstr_fd
-* ft_putendl_fd
-* ft_putnbr_fd
-
-Bonus:
-* ft_lstnew
-* ft_lstadd_front
-* ft_lstsize
-* ft_lstlast
-* ft_lstadd_back
-* ft_lstdelone
-* ft_lstclear
-* ft_lstiter
-* ft_lstmap
-
-
-## :wrench: Tecnologias utilizadas
-<div style="display: inline_block"><br>
-    <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 </div>
 
+<div class="row">
+    
+<img width="100%" src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="Testando Funções!" class="project-img" />
+</div>
+<div class="row">
+    
+## :books: Funcionalidades<br>
+Mandatory:<br>
+<li>isalpha</li>
+<li>isdigit</li>
+<li> isalnum</li>
+<li>isascii</li>
+<li> isprint</li>
+<li>strlen</li>
+<li>memset</li>
+<li>bzero</li>
+<li>memcpy</li>
+<li> memmove</li>
+<li> strlcpy</li>
+<li>strlcat</li>
+<li> toupper</li>
+<li>tolower</li>
+<li>strchr</li>
+<li> strrchr</li>
+<li>strncmp</li>
+<li>memchr</li>
+<li>memcmp</li>
+<li>strnstr</li>
+<li>atoi</li>
+<li> calloc</li>
+<li>strdup</li>
+<li>ft_substr </li>
+<li> ft_strjoin</li>
+<li>ft_strtrim</li>
+<li> ft_split</li>
+<li> ft_itoa</li>
+<li>ft_strmapi</li>
+<li>ft_striteri</li>
+<li> ft_putchar_fd</li>
+<li> ft_putstr_fd</li>
+<li>ft_putendl_fd</li>
+<li> ft_putnbr_fd</li>
+</ul>
+<br>
+Bonus:<br>
+<ul>
+<li>ft_lstnew</li>
+<li>ft_lstadd_front</li>
+<li>ft_lstsize</li>
+<li>ft_lstlast</li>
+<li>ft_lstadd_back</li>
+<li>ft_lstdelone</li>
+<li>ft_lstclear</li>
+<li>ft_lstiter</li>
+<li>ft_lstmap</li>
+</ul>
 
-## :rocket: Rodando o projeto
+</div>
+<div class="row">
+
+## :wrench: Tecnologias utilizadas<br>
+<div style="display: inline_block"><br>
+    <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+
+</div>
+<div class="row">
+
+## :rocket: Rodando o projeto<br>
 * Por enquanto, sem tutorial.
+    
+   </div>
+<div class="row">
 
-## :soon: Implementação futura
+## :soon: Implementação futura<br>
 * Nada em mente por enquanto.
+</div>
+<div class="row">
+    
 
-
-## :handshake: Colaboradores
+## :handshake: Colaboradores<br>
 <table>
   <tr>
     <td align="center">
@@ -82,8 +98,13 @@ Bonus:
     </td>
   </tr>
 </table>
-
-## :dart: Status do projeto
+</div>
+<div class="row">
+    
+## :dart: Status do projeto<br>
 * Entregue com pontuação 120%.
-<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" />
+    </div>
+<div class="row">
 
+<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" class="project-img" />
+    </div>
