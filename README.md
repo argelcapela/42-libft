@@ -1,7 +1,9 @@
-<div id="portfolio-slideshow-items" class="hide-on-portfolio">
+<!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
 <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="The Last of us"></div>
 <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="GTA V"></div>
+<div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="GTA V"></div>
 </div>
+-->
 
 <div class="hide-on-portfolio">
 <h1 align="center"> 42_libft </h1>
