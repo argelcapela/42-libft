@@ -169,18 +169,64 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </tr>           
 </table>
 
+<br>
+<table>
+<tr>
+<th colspan="2">Bonus</th>
+</tr>
+<tr>
+    <td>Nome</td>
+    <td>O que ela faz?</td>
+</tr>
+<tr>
+    <td>ft_lstnew</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ft_lstadd_front</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ft_lstsize</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstlast</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>ft_lstadd_back</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstdelone</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstclear</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstiter</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstmap</td>
+    <td></td>
+</tr> 
+</table>
+    
 
-Bonus
 
-ft_lstnew
-ft_lstadd_front
-ft_lstsize
-ft_lstlast
-ft_lstadd_back
-ft_lstdelone
-ft_lstclear
-ft_lstiter
-ft_lstmap
+
+
+
+
+
+
+
+
+
 
 
 </div>
@@ -188,13 +234,13 @@ ft_lstmap
 <div class="row">
 
 ## :rocket: Rodando o projeto<br>
-    <li> Por enquanto, sem tutorial.</li>
+    
     
    </div>
 <div class="row">
 
 ## :soon: Implementação futura<br>
-    <li>Nada em mente por enquanto.</li>
+    Nada em mente por enquanto.
 </div>
 <div class="row">
     
