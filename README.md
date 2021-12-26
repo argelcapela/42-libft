@@ -8,13 +8,13 @@
 <div class="hide-on-portfolio">
 <h1 align="center"> 42_libft </h1>
 
-## :memo: Descrição
+## :memo: Descrição:
 Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
 </div>
 
 <div class="row">
 
-## :wrench: Tecnologias utilizadas<br>
+## :wrench: Tecnologias utilizadas:<br>
 <div style="display: inline_block">
     <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 
@@ -22,7 +22,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 
 <div class="row">
     
-## :books: Funcionalidades<br>
+## :books: Funcionalidades:<br>
 <table class="special-border">
 <tr>
 <th colspan="2">Mandatory</th>
@@ -219,7 +219,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 
 <div class="row">
 
-## :rocket: Rodando o projeto<br>
+## :rocket: Rodando o projeto:<br>
     
 <li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
 <li>Link 42 Page: <a href="#">Link</a></li>
@@ -227,7 +227,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </div>
 <div class="row">
 
-## :soon: Implementação futura<br>
+## :soon: Implementação futura:<br>
     
 <li>Nada em mente por enquanto.</li>
     
@@ -235,7 +235,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <div class="row">
     
 
-## :handshake: Colaboradores<br>
+## :handshake: Colaboradores:<br>
 <table>
   <tr>
     <td align="center">
@@ -251,7 +251,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </div>
 <div class="row">
     
-## :dart: Status do projeto<br>
+## :dart: Status do projeto:<br>
 
 <li>Entregue com pontuação 120%.</li>
     
