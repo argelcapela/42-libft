@@ -222,8 +222,8 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 ## :rocket: Rodando o projeto<br>
     <li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
     <li>Link 42 Page: <a href="#">Link</a></li>
-    
-   </div>
+ 
+</div>
 <div class="row">
 
 ## :soon: Implementação futura<br>
