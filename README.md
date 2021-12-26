@@ -9,75 +9,182 @@
 <h1 align="center"> 42_libft </h1>
 
 ## :memo: Descrição
-This project aims to code a C library regrouping usual functions that you’ll
-be allowed to use in all your other projects.
+Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
 </div>
 
-<div class="row">
-    
-<img width="100%" src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="Testando Funções!" class="project-img" />
-</div>
-<div class="row">
-    
-## :books: Funcionalidades<br>
-Mandatory:<br>
-<li>isalpha</li>
-<li>isdigit</li>
-<li> isalnum</li>
-<li>isascii</li>
-<li> isprint</li>
-<li>strlen</li>
-<li>memset</li>
-<li>bzero</li>
-<li>memcpy</li>
-<li> memmove</li>
-<li> strlcpy</li>
-<li>strlcat</li>
-<li> toupper</li>
-<li>tolower</li>
-<li>strchr</li>
-<li> strrchr</li>
-<li>strncmp</li>
-<li>memchr</li>
-<li>memcmp</li>
-<li>strnstr</li>
-<li>atoi</li>
-<li> calloc</li>
-<li>strdup</li>
-<li>ft_substr </li>
-<li> ft_strjoin</li>
-<li>ft_strtrim</li>
-<li> ft_split</li>
-<li> ft_itoa</li>
-<li>ft_strmapi</li>
-<li>ft_striteri</li>
-<li> ft_putchar_fd</li>
-<li> ft_putstr_fd</li>
-<li>ft_putendl_fd</li>
-<li> ft_putnbr_fd</li>
-</ul>
-<br>
-Bonus:<br>
-
-<li>ft_lstnew</li>
-<li>ft_lstadd_front</li>
-<li>ft_lstsize</li>
-<li>ft_lstlast</li>
-<li>ft_lstadd_back</li>
-<li>ft_lstdelone</li>
-<li>ft_lstclear</li>
-<li>ft_lstiter</li>
-<li>ft_lstmap</li>
-
-
-</div>
 <div class="row">
 
 ## :wrench: Tecnologias utilizadas<br>
-<div style="display: inline_block"><br>
+<div style="display: inline_block">
     <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 
 </div>
+
+<div class="row">
+    
+## :books: Funcionalidades<br>
+<table>
+<tr>
+<th colspan="2">Mandatory</th>
+</tr>
+<tr>
+    <td>Nome</td>
+    <td>O que ela faz?</td>
+</tr>
+<tr>
+    <td>isalpha</td>
+    <td></td>
+</tr>
+<tr>
+    <td>isdigit</td>
+    <td></td>
+</tr>
+<tr>
+    <td>isalnum</td>
+    <td></td>
+</tr>
+<tr>
+    <td>isascii</td>
+    <td></td>
+</tr>
+ <tr>
+    <td>isprint</td>
+    <td></td>
+</tr>
+<tr>
+    <td>strlen</td>
+    <td></td>
+</tr>
+<tr>
+    <td>memset</td>
+    <td></td>
+</tr>
+<tr>
+    <td>bzero</td>
+    <td></td>
+</tr>
+ <tr>
+    <td>memcpy</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>memmove</td>
+    <td></td>
+</tr>    
+<tr>
+    <td>strlcpy</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>strlcat</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>toupper</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>tolower</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>strchr</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>strrchr x</td>
+    <td>x</td>
+</tr>   
+<tr>
+    <td>strncmp</td>
+    <td></td>
+</tr>   
+ <tr>
+    <td>memchr</td>
+    <td></td>
+</tr>     
+<tr>
+    <td>memcmp</td>
+    <td></td>
+</tr>  
+<tr>
+    <td>strnstr</td>
+    <td></td>
+</tr>  
+<tr>
+    <td>atoi</td>
+    <td></td>
+</tr>  
+<tr>
+    <td>calloc</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>strdup</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_substr</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_strjoin</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_strtrim</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_split</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_itoa</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_strmapi</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_striteri</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_putchar_fd</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_putstr_fd</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_putendl_fd</td>
+    <td></td>
+</tr>      
+<tr>
+    <td>ft_putnbr_fd</td>
+    <td></td>
+</tr>           
+</table>
+
+
+Bonus
+
+ft_lstnew
+ft_lstadd_front
+ft_lstsize
+ft_lstlast
+ft_lstadd_back
+ft_lstdelone
+ft_lstclear
+ft_lstiter
+ft_lstmap
+
+
+</div>
+
 <div class="row">
 
 ## :rocket: Rodando o projeto<br>
