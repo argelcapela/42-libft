@@ -257,7 +257,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     
 </div>
 <br>
-<div class="row">
+<div class="row hide-on-portfolio">
 
-<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" class="project-img hide-on-portfolio" />
+<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" class="project-img" />
     </div>
