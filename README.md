@@ -220,6 +220,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <div class="row">
 
 ## :rocket: Rodando o projeto<br>
+    
     <li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
     <li>Link 42 Page: <a href="#">Link</a></li>
  
@@ -227,7 +228,9 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <div class="row">
 
 ## :soon: Implementação futura<br>
+    
     <li>Nada em mente por enquanto.</li>
+    
 </div>
 <div class="row">
     
@@ -250,6 +253,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     
 ## :dart: Status do projeto<br>
     <li>Entregue com pontuação 120%.</li>
+    
     </div>
 <div class="row">
 
