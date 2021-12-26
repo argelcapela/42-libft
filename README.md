@@ -23,7 +23,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <div class="row">
     
 ## :books: Funcionalidades<br>
-<table>
+<table class="special-border">
 <tr>
 <th colspan="2">Mandatory</th>
 </tr>
@@ -169,7 +169,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </tr>           
 </table>
 
-<table>
+<table class="special-border">
 <tr>
 <th colspan="2">Bonus</th>
 </tr>
@@ -265,5 +265,5 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     </div>
 <div class="row">
 
-<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" class="project-img" />
+<img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="Resultado 125%!" class="project-img hide-on-portfolio" />
     </div>
