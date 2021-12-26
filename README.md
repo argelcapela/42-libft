@@ -1,5 +1,5 @@
 <!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
-    <div class="item"><video id="portfolio-video" data-yt2html5="https://www.youtube.com/watch?v=xu8Zel1u-6k" controls></video></div>
+    
     <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="The Last of us"></div>
     <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="GTA V"></div>
 </div>
