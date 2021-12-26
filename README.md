@@ -169,7 +169,6 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </tr>           
 </table>
 
-<br>
 <table>
 <tr>
 <th colspan="2">Bonus</th>
