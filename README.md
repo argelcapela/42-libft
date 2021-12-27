@@ -12,7 +12,7 @@
 Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
 </div>
 
-<div class="row">
+<div class="col-12">
 
 ## :wrench: Tecnologias utilizadas:<br>
 <div style="display: inline_block">
@@ -216,7 +216,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     
 </div>
 
-<div class="row">
+<div class="col-12">
 
 ## :rocket: Rodando o projeto:<br>
     
@@ -224,14 +224,14 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <li>Link 42 Page: <a href="#">Link</a></li>
  
 </div>
-<div class="row">
+<div class="col-12">
 
 ## :soon: Implementação futura:<br>
     
 <li>Nada em mente por enquanto.</li>
     
 </div>
-<div class="row">
+<div class="col-12">
     
 
 ## :handshake: Colaboradores:<br>
@@ -248,7 +248,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
   </tr>
 </table>
 </div>
-<div class="row">
+<div class="col-12">
     
 ## :dart: Status do projeto:<br>
 
