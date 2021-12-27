@@ -20,7 +20,6 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 
 </div>
 
-<div class="row">
 <div class="col-12">
 ## :books: Funcionalidades:<br>
 <table class="special-border col-12">
@@ -214,7 +213,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     <td></td>
 </tr> 
 </table>
-    </div>
+    
 </div>
 
 <div class="row">
