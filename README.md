@@ -23,7 +23,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <div class="row">
     
 ## :books: Funcionalidades:<br>
-<table class="special-border">
+<table class="special-border col-12">
 <tr>
 <th colspan="2">Mandatory</th>
 </tr>
@@ -169,7 +169,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 </tr>           
 </table>
 
-<table class="special-border">
+<table class="special-border col-12">
 <tr>
 <th colspan="2">Bonus</th>
 </tr>
