@@ -255,3 +255,51 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 <li>Entregue com pontuação 120%.</li>
     
 </div>
+    
+<h1>Trabalhando com Arquivos de cabeçalho & #Include Guards</h1>
+<p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
+   
+<b>Por que usamos ifndef?</b>  
+<p>Em poucas palavras, essa manobra é conhecida como Include Guard, basicamente é impedir que a mesma coisa seja feita mais de uma vez.</p>
+```
+#ifndef _INCL_GUARD
+#define _INCL_GUARD
+    /* código a ser executado caso _INCL_GUARD ainda não tenha sido criado no programa */
+#else
+    /* código a ser executado caso _INCL_GUARD já tenha sido criado, ou seja, sempre deixamos vazio para o programa não adicionar 2x o arquivo.h e bugar o programa. */
+#endif    
+```
+    
+    
+<b>get_next_line.h</b>
+```
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+
+/*
+ * Aqui vão os protótipos de todas as funções que serão utilizadas no projeto
+ * 
+ */
+
+#endif
+
+```   
+    
+<b>get_next_line.c/_utils.c</b>
+```
+#include "get_next_line.h" // incluí os protótipos criados no header dentro do projeto.
+
+/*
+ * agora podemos criar as funções aqui, e elas podem ser enxergadas por todos os arquivos C que estiverem vinculados com o arquivo.h.
+ * isso é legal para organizar o projeto.
+ */
+
+```   
+    
+<h1>Makefile</h1>
+<h1>Criando Bibliotecas em C</h1>
+    
+
+<a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a>
+    
+    
