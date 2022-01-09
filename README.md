@@ -261,6 +261,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
    
 <b>Por que usamos ifndef?</b>  
 <p>Em poucas palavras, essa manobra é conhecida como Include Guard, basicamente é impedir que a mesma coisa seja feita mais de uma vez.</p>
+
 ```
 #ifndef _INCL_GUARD
 #define _INCL_GUARD
@@ -272,6 +273,7 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     
     
 <b>get_next_line.h</b>
+    
 ```
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
@@ -282,10 +284,10 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
  */
 
 #endif
-
 ```   
     
 <b>get_next_line.c/_utils.c</b>
+    
 ```
 #include "get_next_line.h" // incluí os protótipos criados no header dentro do projeto.
 
