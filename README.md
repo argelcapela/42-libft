@@ -256,6 +256,8 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     
 </div>
     
+<li><a href="#restrict">Restrict</a></li>
+    
 <h1>Trabalhando com Arquivos de cabeçalho & #Include Guards</h1>
 <p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
    
@@ -298,9 +300,56 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
 
 ```   
     
-<h1>Makefile</h1>
-<h1>Criando Bibliotecas em C</h1>
+<h2>Makefile</h2>
+<h2>Criando Bibliotecas em C</h2>
+   
+<h2 id="restrict">Restrict Type Qualifier</h2>
+<b>O que é esse tróço?</b>
+<p>Ele é usado somente em ponteiros, ele é uma promessa, diz para o compilador que esse ponteiro é o único ponteiro que está apontando para o valor apontado, é o único caminho par acessar o valor apontado. Como assim Júnior? Vamos lá! Imagina que temos um ponteiro chamado (int* restrict num1) que está apontando para o número um número 10 qualquer, o restrict promete para o compilador que nenhum outro ponteiro está apontando para esse mesmo número 10. O restrict não afeta nada no código em si, mas sim, no modo como o Assembly, ou o compilador executa o código, se a promessa do restrict não for respeitada, vários erros podem ser gerados no código, porém se usado corretamente, pode tornar uma aplicação muito mais rápida. <br> Bora de exemplo?</p>
+
+```
+void updatePtrs(size_t *ptrA, size_t *ptrB, size_t *val)
+{
+  *ptrA += *val;
+  *ptrB += *val;
+}
+```
+``` 
+; Código Assembly RISC Machine (hipotético)
+ldr r12, [val]     ; Carrega/"Copia" a memória alocada apontada por [val] no registrador r12
+ldr r3, [ptrA]     ; Carrega/"Copia" a memória alocada apontada por [ptrA] no registrador r3
+add r3, r3, r12    ; Executa uma soma entre os registradores: r3 = r3 + r12.
+str r3, [ptrA]     ; Pega o valor do registrador r3 e joga na memória alocada apontada por ptrA.
+ldr r3, [ptrB]     ; Espera até a operação anterior terminar / Carrega o valor da variável [ptrB] no registrador r3
+ldr r12, [val]     ; Carrega/"Copia" a memória alocada apontada por [val] no registrador r12 de novo. Por que?
+                   ; porque se o ponteiro val ou ptrA apontarem para o mesmo local, depois da soma feita anteriormente, o valor de val será diferente, então, o compilador
+                   ; precisa ler de novo para garantir que o valor está correto.
+add r3, r3, r12    ; Executa a soma r3 = r3 + r12
+str r3, [ptrB]     ; Pega o valor do registrador r3 e joga na memória alocada apontada por ptrA.
+``` 
+<p>O Compilador sem o restrict faz uma verificação pra saber se o valor de val mudou, caso val apontasse para o mesmo bloco de memória que os demas ponteiros. </p>
     
+    
+```
+void updatePtrs(size_t *restrict ptrA, size_t *restrict ptrB, size_t *restrict val)
+{
+  *ptrA += *val;
+  *ptrB += *val;
+}
+```
+``` 
+; Código Assembly RISC Machine (hipotético)
+ldr r12, [val]  ; Aqui o registrador r12 carrega o bloco de memória apontado por [val] somente uma vez. Porque o restrict, garante pro compilador que esse ponteiro é o único                     ; caminho ou seja, esse valor não vai mudar nas outras operações.
+ldr r3, [ptrA]  ; Carrega os blocos de memória apontados pelos ponteiros [ptrA] e [ptrB] nos respectivos registradores r3,r4.
+ldr r4, [ptrB]
+add r3, r3, r12 ; Executa as operações de adição.
+add r4, r4, r12
+str r3, [ptrA]  ; Executa as operações de atualização.
+str r4, [ptrB]
+``` 
+<p>Agora quando, eu coloco o restrict, o compilador não precisa fazer verificações de consistência, ele vai direto ao ponto, só carrega e executa as operações.</p>    
+<i>Nesse exemplo simples, pode parecer pouco relevante porém, o uso correto do restrict em aplicações mais complexos torna a aplicação mais rápida.</i>
+<br><br>
 
 <a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a>
     
