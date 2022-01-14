@@ -15,7 +15,7 @@
 #################
 
 #	Libft Makefile path
-LIBFTDIR	=	../libft
+LIBFTDIR	=	../
 
 #	Sources
 SRCDIR		=	./
@@ -55,7 +55,7 @@ OBJDIR		=	obj
 INCDIR		=	./include
 
 #	Libraries
-LIBDIR		=	
+LIBDIR		=
 LIBS		=	-lncurses
 
 #	Assets
@@ -69,12 +69,12 @@ LIBMALLOC	=	malloc.dylib
 TMPLIB		=	$(ASSETDIR)/tmp
 WRAPNAME	=	run_test
 
-FRAMEWORK	=	
+FRAMEWORK	=
 
 #	Compiler
 CFLAGS		=	-Werror -Wall -Wextra# -g3 -fsanitize=address
 CSOFLAGS	=	-shared -fPIC
-CSOFLAGS2	=	
+CSOFLAGS2	=
 CC			=	clang
 CC_SO		=	$(CC)
 
