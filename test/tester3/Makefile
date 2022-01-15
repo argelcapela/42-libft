@@ -1,7 +1,7 @@
 .DEFAULT_GOAL	:= a
 UTILS			= $(addprefix utils/, sigsegv.cpp color.cpp check.cpp leaks.cpp)
 PARENT_DIR		= $(shell dirname $(shell pwd))
-LIBFT_PATH		= $(PARENT_DIR)
+LIBFT_PATH		= ../../src/
 TESTS_PATH		= tests/
 MANDATORY		= memset bzero memcpy memmove memchr memcmp strlen isalpha isdigit isalnum \
 				isascii isprint toupper tolower strchr strrchr strncmp strlcpy strlcat strnstr \
@@ -17,7 +17,7 @@ ifeq ($(UNAME), Linux)
 	VALGRIND = valgrind -q --leak-check=full
 endif
 ifeq ($(IN_DOCKER),TRUE)
-	LIBFT_PATH = /project/
+	LIBFT_PATH = ../../src/
 endif
 
 $(MANDATORY): %: mandatory_start

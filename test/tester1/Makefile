@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: alelievr <alelievr@student.42.fr>          +#+  +:+       +#+         #
+#    By: acapela- < acapela-@student.42sp.org.br    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created  2015/04/04 19:22:36 by alelievr          #+#    #+#              #
-#    Updated: 2019/11/03 22:05:40 by tjans         ########   odam.nl          #
+#    Created: 2015/04/04 19:22:36 by alelievr          #+#    #+#              #
+#    Updated: 2022/01/15 05:17:53 by acapela-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@
 #################
 
 #	Libft Makefile path
-LIBFTDIR	=	../
+LIBFTDIR	=../../src/
 
 #	Sources
 SRCDIR		=	./
@@ -63,7 +63,7 @@ ASSETDIR	=	assets
 
 #	Output
 NAME		=	libtests
-SONAME		=	libft.so
+SONAME		=	libft.a
 ANAME		=	libft.a
 LIBMALLOC	=	malloc.dylib
 TMPLIB		=	$(ASSETDIR)/tmp
@@ -154,7 +154,7 @@ ifneq ($(OS),Linux)
 $(SONAME):
 	@rm -rf $(TMPLIB) || echo -n
 	@mkdir -p $(TMPLIB)
-	@cd $(TMPLIB) && ar -xv ../libft.a 1>/dev/null
+	@cd $(TMPLIB) && ar -xv ../../src/libft.a 1>/dev/null
 	@$(call exec_color, "\033[38;5;$(LINK_COLOR_T)m➤ \033[38;5;$(LINK_COLOR)m",\
 		$(CC_SO), $(CSOFLAGS), $(TMPLIB)/*.o, -o, $(SONAME))
 else
