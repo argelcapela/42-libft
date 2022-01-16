@@ -5,7 +5,9 @@
 -->
 
 <div class="hide-on-portfolio">
-<h1 align="center"> 42_libft </h1>
+<div align="center">
+	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
+</div>
 
 ## :memo: Descrição:
 Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
