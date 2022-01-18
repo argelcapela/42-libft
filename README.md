@@ -1,12 +1,13 @@
 <!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
-    
-    <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/libft_test.gif?raw=true" alt="The Last of us"></div>
-    <div class="item"><img src="https://github.com/argelcapela/42_libft/blob/master/assets/125.jpg?raw=true" alt="GTA V"></div>
+    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/125.jpg?raw=true" alt="Avaliação"></div>
+    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/libft_test.gif?raw=true" alt="Tripoulle Test"></div>
 </div>
 -->
 
 <div class="hide-on-portfolio">
-<h1 align="center"> 42_libft </h1>
+<div align="center">
+	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
+</div>
 
 ## :memo: Descrição:
 Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
