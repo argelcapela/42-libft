@@ -38,7 +38,9 @@
 # :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
 <li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
-<li><a href="#restrict">O que faz o 'Restrict' ?</a></li>
+<li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
+<li><a href="#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
+<li><a href="#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
 <br>
 	
 <b>2) Brinde</b>
@@ -149,11 +151,19 @@ Só se for agora truta! 😎👌<br>
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 	
 <!--# 2 atoi	-->
@@ -184,11 +194,19 @@ Exemplo:
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 	
 <!--# 3 itoa	-->
@@ -219,11 +237,19 @@ Exemplo:
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 	
 <!--# 4 ft_split-->
@@ -254,11 +280,19 @@ Exemplo:
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 	
 <!--# 5 ft_strtrim-->
@@ -289,14 +323,22 @@ Exemplo:
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 	
-<!--# + ft_memcmp-->
+<!--# 6 ft_memcmp-->
 <table>
 <thead>
 	<tr>
@@ -311,24 +353,76 @@ Exemplo:
 </thead>
 <tbody>
 	<tr>
-		<td>Aloca memória e retorna uma cópia de 's1' com cada caracter de 'set' removido do começo e do fim de uma string.</td>
-		<td>stdlib.h</td>
-		<td>char *ft_strtrim(char const *s1, char const *set);</td>
+		<td>Percorrer os primeiros 'n' bytes dos blocos de memória 's1' e 's2' paralelamente, e retornar a diferença entre o valor ASCII de ambos. Com isso, podemos saber se duas strings são iguais ou não.</td>
+		<td>string.h</td>
+		<td>int memcmp(const void *s1, const void *s2, size_t n);</td>
 		<td>
 			<ul>
-				<li>String aparada, ou seja, com os caracteres cortados do começo e do fim, se houver correspondência é claro!</li>
-				<li>Nulo se a alocação de memória falhar</li>
+				<li>Número < 0 -> Se o "valor ASCII de algum caracter de 's1'" for menor que o "valor ASCII de outro caracter em 's2'" </li>
+				<li>Número > 0 -> Se o "valor ASCII de algum caracter de 's1'" for maior que o "valor ASCII de outro caracter em 's2'" </li>
+				<li>Número = 0 -> Se não houver diferença entre os "valores ASCII 's1'" e os "valores ASCII de 's2'" </li>
+				<li>Se 'n' é zero, o valor de retorno é zero</li>
 			</ul>
 		</td>
 	</tr>
 </tbody>	
 </table>
 <br>
+	
 Exemplo:
 	
 ```
 
 ```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td>void ft_putnbr_fd(int n, int fd);</td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
 <br><br>
 
 
@@ -409,12 +503,14 @@ Exemplo:
  */
 
 ```   
-    
-<h2>Makefile</h2>
-<h2>Criando Bibliotecas em C</h2>
+<h2 id="makefile">Partiu dominar o 'Makefile'?</h2>
+<br><br><br>	
+	
+<h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
+<br><br><br>
    
-<h2 id="restrict">Restrict Type Qualifier</h2>
-<b>O que é esse tróço?</b>
+<h2 id="restrict">O que é 'restrict' antes das variáveis? é de comer?</h2>
+<b>Que tróço é Restrict Type Qualifier?</b>
 <p>Ele é usado somente em ponteiros, ele é uma promessa, diz para o compilador que esse ponteiro é o único ponteiro que está apontando para o valor apontado, é o único caminho par acessar o valor apontado. Como assim Júnior? Vamos lá! Imagina que temos um ponteiro chamado (int* restrict num1) que está apontando para o número um número 10 qualquer, o restrict promete para o compilador que nenhum outro ponteiro está apontando para esse mesmo número 10. O restrict não afeta nada no código em si, mas sim, no modo como o Assembly, ou o compilador executa o código, se a promessa do restrict não for respeitada, vários erros podem ser gerados no código, porém se usado corretamente, pode tornar uma aplicação muito mais rápida. <br> Bora de exemplo?</p>
 
 ```
