@@ -38,6 +38,52 @@
 # :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
 <li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
+<ol>
+<i>Mandatório:</i>
+	<li><a href="#ft_split">ft_split</a></li>
+	<li><a href="#ft_strtrim">ft_strtrim</a></li>
+	<li><a href="#ft_atoi">ft_atoi</a></li>
+	<li><a href="#ft_itoa">ft_itoa</a></li>
+	<li><a href="#ft_strnstr">ft_strnstr</a></li>
+	<li><a href="#ft_strncmp">ft_strncmp</a></li>
+	<li><a href="#ft_memcmp">ft_memcmp</a></li>
+	<li><a href="#ft_substr">ft_substr</a></li>
+	<li><a href="#ft_join">ft_join</a></li>
+	<li><a href="#ft_strlcat">ft_strlcat</a></li>
+	<li><a href="#ft_putnbr_fd">ft_putnbr_fd</a></li>
+	<li><a href="#ft_strmapi">ft_strmapi</a></li>
+	<li><a href="#ft_striteri">ft_striteri</a></li>
+	<li><a href="#ft_strlcpy">ft_strlcpy</a></li>
+	<li><a href="#memcpy">memcpy</a></li>
+	<li><a href="#ft_memmove">ft_memmove</a></li>
+	<li><a href="#ft_strrchr">ft_strrchr</a></li>
+	<li><a href="#ft_memchr">ft_memchr</a></li>
+	<li><a href="#ft_strdup">ft_strdup</a></li>
+	<li><a href="#ft_calloc">ft_calloc</a></li>
+	<li><a href="#ft_memset">ft_memset</a></li>
+	<li><a href="#ft_bzero">ft_bzero</a></li>
+	<li><a href="#ft_isalpha">ft_isalpha</a></li>
+	<li><a href="#ft_isdigit">ft_isdigit</a></li>
+	<li><a href="#ft_isalnum">ft_isalnum</a></li>
+	<li><a href="#ft_isascii">ft_isascii</a></li>
+	<li><a href="#ft_isprint">ft_isprint</a></li>
+	<li><a href="#ft_strlen">ft_strlen</a></li>
+	<li><a href="#ft_toupper">ft_toupper</a></li>
+	<li><a href="#ft_tolower">ft_tolower</a></li>
+	<li><a href="#ft_putstr_fd">ft_putstr_fd</a></li>
+	<li><a href="#ft_putendl_fd">ft_putendl_fd</a></li>
+	<li><a href="#ft_putchar_fd">ft_putchar_fd</a></li>
+<i>Bônus:</i>
+	<li><a href="#ft_lstnew">ft_lstnew</a></li>
+	<li><a href="#ft_lstadd_front">ft_lstadd_front</a></li>
+	<li><a href="#ft_lstsize">ft_lstsize</a></li>
+	<li><a href="#ft_lstlast">ft_lstlast</a></li>
+	<li><a href="#ft_lstadd_back">ft_lstadd_back</a></li>
+	<li><a href="#ft_lstdelone">ft_lstdelone</a></li>
+	<li><a href="#ft_lstclear">ft_lstclear</a></li>
+	<li><a href="#ft_lstiter">ft_lstiter</a></li>
+	<li><a href="#ft_lstmap">ft_lstmap</a></li>
+</ol>
 <li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
 <li><a href="#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
 <li><a href="#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
@@ -121,137 +167,6 @@ Só se for agora truta! 😎👌<br>
 <i>*N.O. Libc: São funções que não são oficiais das bibliotecas padrões do C, mas sim, derivadas.</i><br>
 <i>*As funções estão ordenadas em ordem de complexidade de implementação e de entendimento prático, na minha opinião! 😁✔. Vc não é obrigado a concordar!</i><br>
 <br><br>
-<!--# 1 strnstr
- -->
-<table>
-<thead>
-	<tr>
-		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strnstr&sektion=3">ft_strnstr</a></th>
-	</tr>
-	<tr>
-		<th>O que ela faz?</th>
-		<th>Lib Origem</th>
-		<th>Protótipo</th>
-		<th>Valores de Retorno</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Retorna a primeira ocorrência de little dentro de big</td>
-		<td>string.h</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strnstr.c">char *strstr(const char *big, const char	*little);</a></td>
-		<td>
-			<ul>
-				<li>Se little é uma string vazia, retorna big</li>
-				<li>Se little não existe na string, retorna NULL</li>
-				<li>Se little é encontrado, um ponteiro para a primeira ocorrência de little dentro de big é retornado.</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>	
-</table>
-<br>
-	
-Exemplo:
-	
-```
-
-```	
-	
-Saída:
-	
-```
-
-```
-	
-<br><br>
-	
-<!--# 2 atoi	-->
-<table>
-<thead>
-	<tr>
-		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/atoi.3.html">ft_atoi</a></th>
-	</tr>
-	<tr>
-		<th>O que ela faz?</th>
-		<th>Lib Origem</th>
-		<th>Protótipo</th>
-		<th>Valores de Retorno</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Converte de String para Inteiro</td>
-		<td>stdlib.h</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_atoi.c">int atoi(const char *nptr);</a></td>
-		<td>
-			<ul>
-				<li>O Valor convertido</li>
-				<li>0 em caso de erro</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>	
-</table>
-<br>
-	
-Exemplo:
-	
-```
-
-```	
-	
-Saída:
-	
-```
-
-```
-	
-<br><br>
-	
-<!--# 3 itoa	-->
-<table>
-<thead>
-	<tr>
-		<th colspan="4">ft_itoa</th>
-	</tr>
-	<tr>
-		<th>O que ela faz?</th>
-		<th>Lib Origem</th>
-		<th>Protótipo</th>
-		<th>Valores de Retorno</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Aloca memória e retorna uma string representando o inteiro recebido como argumento</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_itoa.c">char *ft_itoa(int n);</a></td>
-		<td>
-			<ul>
-				<li>A String representando o inteiro.</li>
-				<li>NULL se a alocação falhar</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>	
-</table>
-<br>
-	
-Exemplo:
-	
-```
-
-```	
-	
-Saída:
-	
-```
-
-```
-	
-<br><br>
-	
 <!--# 4 ft_split-->
 <table>
 <thead>
@@ -337,6 +252,137 @@ Saída:
 ```
 	
 <br><br>
+
+<!--# 2 atoi	-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/atoi.3.html">ft_atoi</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Converte de String para Inteiro</td>
+		<td>stdlib.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_atoi.c">int atoi(const char *nptr);</a></td>
+		<td>
+			<ul>
+				<li>O Valor convertido</li>
+				<li>0 em caso de erro</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# 3 itoa	-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_itoa</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna uma string representando o inteiro recebido como argumento</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_itoa.c">char *ft_itoa(int n);</a></td>
+		<td>
+			<ul>
+				<li>A String representando o inteiro.</li>
+				<li>NULL se a alocação falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 1 strnstr
+ -->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strnstr&sektion=3">ft_strnstr</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Retorna a primeira ocorrência de little dentro de big</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strnstr.c">char *strstr(const char *big, const char	*little);</a></td>
+		<td>
+			<ul>
+				<li>Se little é uma string vazia, retorna big</li>
+				<li>Se little não existe na string, retorna NULL</li>
+				<li>Se little é encontrado, um ponteiro para a primeira ocorrência de little dentro de big é retornado.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+
 	
 <!--# 6 ft_memcmp-->
 <table>
