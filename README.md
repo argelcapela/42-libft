@@ -139,7 +139,7 @@ Só se for agora truta! 😎👌<br>
 	<tr>
 		<td>Retorna a primeira ocorrência de little dentro de big</td>
 		<td>string.h</td>
-		<td>char *strstr(const char *big, const char	*little);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strnstr.c">char *strstr(const char *big, const char	*little);</a></td>
 		<td>
 			<ul>
 				<li>Se little é uma string vazia, retorna big</li>
@@ -183,7 +183,7 @@ Saída:
 	<tr>
 		<td>Converte de String para Inteiro</td>
 		<td>stdlib.h</td>
-		<td>int atoi(const char *nptr);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_atoi.c">int atoi(const char *nptr);</a></td>
 		<td>
 			<ul>
 				<li>O Valor convertido</li>
@@ -226,7 +226,7 @@ Saída:
 	<tr>
 		<td>Aloca memória e retorna uma string representando o inteiro recebido como argumento</td>
 		<td>N.O. Libc</td>
-		<td>char *ft_itoa(int n);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_itoa.c">char *ft_itoa(int n);</a></td>
 		<td>
 			<ul>
 				<li>A String representando o inteiro.</li>
@@ -269,7 +269,7 @@ Saída:
 	<tr>
 		<td>Aloca memória e retorna um array de strings obtido a partir da divisão de s, usando o caracter 'c' como delimitador.</td>
 		<td>N.O. Libc</td>
-		<td>char **ft_split(char const *s, char c);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_split.c">char **ft_split(char const *s, char c);</a></td>
 		<td>
 			<ul>
 				<li>Matriz de strings</li>
@@ -312,7 +312,7 @@ Saída:
 	<tr>
 		<td>Aloca memória e retorna uma cópia de 's1' com cada caracter de 'set' removido do começo e do fim de uma string.</td>
 		<td>stdlib.h</td>
-		<td>char *ft_strtrim(char const *s1, char const *set);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strtrim.c">char *ft_strtrim(char const *s1, char const *set);</a></td>
 		<td>
 			<ul>
 				<li>String aparada, ou seja, com os caracteres cortados do começo e do fim, se houver correspondência é claro!</li>
@@ -355,7 +355,7 @@ Saída:
 	<tr>
 		<td>Percorrer os primeiros 'n' bytes dos blocos de memória 's1' e 's2' paralelamente, e retornar a diferença entre o valor ASCII de ambos. Com isso, podemos saber se duas strings são iguais ou não.</td>
 		<td>string.h</td>
-		<td>int memcmp(const void *s1, const void *s2, size_t n);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_memcmp.c">int memcmp(const void *s1, const void *s2, size_t n);</a></td>
 		<td>
 			<ul>
 				<li>Número < 0 -> Se o "valor ASCII de algum caracter de 's1'" for menor que o "valor ASCII de outro caracter em 's2'" </li>
@@ -382,7 +382,260 @@ Saída:
 ```
 	
 <br><br>
+<!--# 7 ft_substr-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_substr</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna a string 's' aparada, começando na posição 'start' e caminhando 'len' para frente. como assim ? A string retornada é uma "substring", ou seja, uma string contida dentro de outra string. Por exemplo: 'argelcapela', se meu start é 0, e meu len é 5, o retorno é 'argel' somente, ou seja, a string foi aparada, cortada, ou foi retornado um substring dessa string.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_substr.c">char *ft_substr(char const *s, unsigned int start,
+size_t len);</a></td>
+		<td>
+			<ul>
+				<li>Substring de 's'</li>
+				<li>NULL se a alocação de memória falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
 	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 8 ft_strjoin-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_strjoin</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna uma nova string, que é o resultado da concatenação ('junção') das strings 's1' e 's2'</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strjoin.c">char *ft_strjoin(char const *s1, char const *s2);</a></td>
+		<td>
+			<ul>
+				<li>String nova concatenação de 's1' e 's2'</li>
+				<li>NULL se a alocação falhar.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 9 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 10 ft_strmapi-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_strmapi</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aplica a função 'f' para cada caractere da string 's', resultando na criação de uma nova string modificada.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strmapi.c">char *ft_strmapi(char const *s, char (*f)(unsigned
+int, char));</a></td>
+		<td>
+			<ul>
+				<li>A string criada pela sucessiva aplicação de 'f'</li>
+				<li>NULL se a alocação falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 11 ft_striteri-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_striteri</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aplica a função 'f' em cada caractere da string 's'.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_striteri.c">void ft_striteri(char *s, void (*f)(unsigned int,
+char*));</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 12 ft_strlcpy-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strlcpy&sektion=3">ft_strlcpy</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Copia os primeiros 'size' caracteres da string 'src' para 'dst'.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strlcpy.c">size_t
+     strlcpy(char * restrict dst, const	char * restrict	src, size_t dstsize);</a></td>
+		<td>
+			<ul>
+				<li>Retorna o tamanho total de src.</li>
+				<li>Se o valor de retorno for >= 'dstsize' a string de saída foi "TRUNCADA", ou seja, está cortada, inacabada ou imcompleta.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
 <!--# 7 ft_putnbr_fd-->
 <table>
 <thead>
@@ -400,7 +653,212 @@ Saída:
 	<tr>
 		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
 		<td>N.O. Libc</td>
-		<td>void ft_putnbr_fd(int n, int fd);</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+<!--# 7 ft_putnbr_fd-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_putnbr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
 		<td>
 			<ul>
 				<li>Nada</li>
