@@ -1,241 +1,56 @@
 <!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
-    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/125.jpg?raw=true" alt="Avaliação"></div>
-    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/libft_test.gif?raw=true" alt="Tripoulle Test"></div>
+    
 </div>
 -->
 
 <div class="hide-on-portfolio">
+
 <div align="center">
+	<p><i>"Nunca perca a esperança na humanidade, porque ela é como um oceano. Só porque existem algumas gotas de água suja nele, não quer dizer que esteja sujo por completo."</i><br><b>Mahatma Gandhi</b></p>
+<br><br>
 	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
 </div>
+<br><br>
+	
+# :sparkles: O que é a 42-libft ?
+<b>Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.</b><br>
 
-## :memo: Descrição:
-Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
 </div>
 
 <div class="col-12">
 
-## :wrench: Tecnologias utilizadas:<br>
+# :wrench: Tecnologias utilizadas:<br>
 <div style="display: inline_block">
     <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 
 </div>
 
 <div class="col-12">
-## :books: Funcionalidades:<br>
-<table class="special-border col-12">
-<tr>
-<th colspan="2">Mandatory</th>
-</tr>
-<tr>
-    <td>Nome</td>
-    <td>O que ela faz?</td>
-</tr>
-<tr>
-    <td>isalpha</td>
-    <td></td>
-</tr>
-<tr>
-    <td>isdigit</td>
-    <td></td>
-</tr>
-<tr>
-    <td>isalnum</td>
-    <td></td>
-</tr>
-<tr>
-    <td>isascii</td>
-    <td></td>
-</tr>
- <tr>
-    <td>isprint</td>
-    <td></td>
-</tr>
-<tr>
-    <td>strlen</td>
-    <td></td>
-</tr>
-<tr>
-    <td>memset</td>
-    <td></td>
-</tr>
-<tr>
-    <td>bzero</td>
-    <td></td>
-</tr>
- <tr>
-    <td>memcpy</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>memmove</td>
-    <td></td>
-</tr>    
-<tr>
-    <td>strlcpy</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>strlcat</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>toupper</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>tolower</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>strchr</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>strrchr x</td>
-    <td>x</td>
-</tr>   
-<tr>
-    <td>strncmp</td>
-    <td></td>
-</tr>   
- <tr>
-    <td>memchr</td>
-    <td></td>
-</tr>     
-<tr>
-    <td>memcmp</td>
-    <td></td>
-</tr>  
-<tr>
-    <td>strnstr</td>
-    <td></td>
-</tr>  
-<tr>
-    <td>atoi</td>
-    <td></td>
-</tr>  
-<tr>
-    <td>calloc</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>strdup</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_substr</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_strjoin</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_strtrim</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_split</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_itoa</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_strmapi</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_striteri</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_putchar_fd</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_putstr_fd</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_putendl_fd</td>
-    <td></td>
-</tr>      
-<tr>
-    <td>ft_putnbr_fd</td>
-    <td></td>
-</tr>           
-</table>
 
-<table class="special-border col-12">
-<tr>
-<th colspan="2">Bonus</th>
-</tr>
-<tr>
-    <td>Nome</td>
-    <td>O que ela faz?</td>
-</tr>
-<tr>
-    <td>ft_lstnew</td>
-    <td></td>
-</tr>
-<tr>
-    <td>ft_lstadd_front</td>
-    <td></td>
-</tr>
-<tr>
-    <td>ft_lstsize</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstlast</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>ft_lstadd_back</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstdelone</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstclear</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstiter</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstmap</td>
-    <td></td>
-</tr> 
-</table>
-    
-</div>
+# :rocket: Rodando o projeto:<br>
+<b>Links:</b>
+<li>Repositório Github: <a href="https://github.com/argelcapela/42-libft">Link</a></li>
+<li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
+<br><br>
 
 <div class="col-12">
-
-## :rocket: Rodando o projeto:<br>
     
-<li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
-<li>Link 42 Page: <a href="#">Link</a></li>
- 
+# :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
+<b>1) Conhecimento adquiridos para construir a libft</b><br>
+<li><a href="#algoritmo">Lógica 42-libft</a></li>
+<li><a href="#restrict">O que faz o 'Restrict' ?</a></li>
+<br>
+	
+<b>2) Brinde</b>
+<li><a href="#step-by-step"> 42-libft Passo a Passo</a></li>
+<li><a href="#outras">Outras Coisas Legais</a></li>
+<li><a href="#fontes">Fontes</a></li>
 </div>
+<br>	
+	
 <div class="col-12">
-
-## :soon: Implementação futura:<br>
-    
-<li>Nada em mente por enquanto.</li>
-    
-</div>
-<div class="col-12">
-    
-
-## :handshake: Colaboradores:<br>
+	
+# :handshake: Colaboradores:<br>
 <table>
   <tr>
     <td align="center">
@@ -248,17 +63,167 @@ Esse projeto visa construir do zero uma biblioteca de funções fundamentais par
     </td>
   </tr>
 </table>
+<br><br>
 </div>
+	
 <div class="col-12">
-    
-## :dart: Status do projeto:<br>
-
-<li>Entregue com pontuação 120%.</li>
-    
+	
+# :dart: Status do projeto:<br>
+<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/icons/finalizado.png?raw=true" width="250px" height="200px">
 </div>
-    
-<li><a href="#restrict">Restrict</a></li>
-    
+	
+<br>
+
+<div class="col-12">
+	
+# :clipboard: Nota:<br>
+<img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/nota-125.png?raw=true" width="150px" height="150px" alt="nota libft">
+</div>
+	
+<br>
+
+<div class="col-12">
+	
+# :bug:	 Erros:<br>
+<p>Identificou um erro? Por favor me informe! ou fique a vontade para criar um *issue* aqui no Github e contribuir.</p>
+<p>Também fique a vontade para opinar, criticar, xingar, elogiar etc. Para mim é tudo a mesma coisa, fonte de crescimento pessoal. Eu não sei tudo, mas estou buscando ser um profissional 1% melhor a cada dia.</p>
+</div>
+	
+<div class="col-12">
+<p>Não esqueça de dar um ⭐️ se você gostou, ou se esse repositório te ajudou de alguma maneira, isso irá me ajudar muito! Obrigado, você é top! 😁👍</p>
+</div>
+	
+
+	
+	
+	
+<br><br><br>
+<br><br><br>
+<br><br>
+	
+<div align="center">
+
+# :crown: 
+	
+</div>    
+<br><br>
+
+
+<br><br>
+<h2 id="algoritmo">Algoritmo 42-libft?</h2>
+<b>Primeiramente... quantos funções existem no libft? o que elas fazem de um modo simples ?</b>
+<p>São 45 funções no total. </p>
+	
+<b>Vamos ver uma por uma?</b>	
+<br>
+<!--# 1	-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strnstr&sektion=3">ft_strnstr</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Retorna a primeira ocorrência de little dentro de big</td>
+		<td>string.h</td>
+		<td>char *strstr(const char *big, const char	*little);</td>
+		<td>
+			<ul>
+				<li>Se little é uma string vazia, retorna big</li>
+				<li>Se little não existe na string, retorna NULL</li>
+				<li>Se little é encontrado, um ponteiro para a primeira ocorrência de little dentro de big é retornado.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+	
+<!--# 2	-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/atoi.3.html">ft_atoi</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Converte de String para Inteiro</td>
+		<td>stdlib.h</td>
+		<td>int atoi(const char *nptr);</td>
+		<td>
+			<ul>
+				<li>O Valor convertido</li>
+				<li>0 em caso de erro</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+
+
+
+	
+<!--
+<b>Passos Essências para se construir uma GNL</b>
+	<br>
+	<ol>
+<br>
+<i>Mandatório:</i>
+		<li>Ler BUFFER_SIZE caracteres usando a read() quantas vezes forem necessário</li>
+		<li>Eu devo usar malloc no meu buffer(função read) ou usar um array de tamanho fixo?</li>
+		<li>Encontrar o '\n'</li>
+		<li>Retornar o texto lido antes do \n</li>
+		<li>Guardar o texto lido depois do \n, caso haja</li>
+		<li>Utilizar o texto guardado na chamada anterior da GNL</li>
+		<li>Em quais casos a minha GNL deve retornar NULL?</li>
+		<br>
+<i>Bônus:</i>
+		<li>Quantos FILE DESCRIPTOR possíveis um sistema pode ter de uma vez?</li>
+		<li>Como a variável estática pode persistir a posição de um FD sem interferir a de outro?</li>
+		<li>😈Como dar FREE em todas as funções que usam MALLOC e eliminar os leaks de memória?😈</li>
+	</ol>
+<small>Adaptado de uma <a href="https://discord.com/channels/@me/895737928469340160/895737932240023622">thread</a> no slack da 42 mundial</small>
+<br><br>
+<b>Essa foi a minha lógica para construir a GNL, tendo como base os pontos acima:</b>
+<p>Não é a melhor de todas, mas foi a maneira que eu desenvolvi. #SempreAprendendo! 😁✌</p>
+<img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/42-get-next-line/fluxograma.jpg?raw=true" alt="Algoritmo GNL!"> 
+<a href="https://miro.com/app/board/uXjVOXd2zpY=/?invite_link_id=153572408505">Clique aqui para uma melhor visualização</a>
+<br><br>
+-->
+<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
+<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
+<br><br>
+
+<h2 id="outras">Outras coisas legais!</h2>
+
+   
 <h1>Trabalhando com Arquivos de cabeçalho & #Include Guards</h1>
 <p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
    
@@ -352,6 +317,136 @@ str r4, [ptrB]
 <i>Nesse exemplo simples, pode parecer pouco relevante porém, o uso correto do restrict em aplicações mais complexos torna a aplicação mais rápida.</i>
 <br><br>
 
-<a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a>
+		     
+<br><br>
+
+<h2 id="fontes">Fontes</h2>
+<li><a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a></li>
+
+
+
+
+</div>
+
+
+
+
+<!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
+    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/125.jpg?raw=true" alt="Avaliação"></div>
+    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/libft_test.gif?raw=true" alt="Tripoulle Test"></div>
+</div>
+
+
+<div class="hide-on-portfolio">
+<div align="center">
+	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
+</div>
+
+## :memo: Descrição:
+Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
+</div>
+
+<div class="col-12">
+
+## :wrench: Tecnologias utilizadas:<br>
+<div style="display: inline_block">
+    <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+
+</div>
+
+<div class="col-12">
+## :books: Funcionalidades:<br>
+
+
+<table class="special-border col-12">
+<tr>
+<th colspan="2">Bonus</th>
+</tr>
+<tr>
+    <td>Nome</td>
+    <td>O que ela faz?</td>
+</tr>
+<tr>
+    <td>ft_lstnew</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ft_lstadd_front</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ft_lstsize</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstlast</td>
+    <td></td>
+</tr>   
+<tr>
+    <td>ft_lstadd_back</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstdelone</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstclear</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstiter</td>
+    <td></td>
+</tr> 
+<tr>
+    <td>ft_lstmap</td>
+    <td></td>
+</tr> 
+</table>
     
+</div>
+
+<div class="col-12">
+
+## :rocket: Rodando o projeto:<br>
     
+<li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
+<li>Link 42 Page: <a href="#">Link</a></li>
+ 
+</div>
+<div class="col-12">
+
+## :soon: Implementação futura:<br>
+    
+<li>Nada em mente por enquanto.</li>
+    
+</div>
+<div class="col-12">
+    
+
+## :handshake: Colaboradores:<br>
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/argelcapela">
+        <img src="https://avatars.githubusercontent.com/u/79276276?s=400&u=055b803f4708d59eaf50208ba601f85844125757&v=4" width="100px;" alt="Foto de Argel Capela!"/><br>
+        <sub>
+          <b>Argel Capela</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="col-12">
+    
+## :dart: Status do projeto:<br>
+
+<li>Entregue com pontuação 120%.</li>
+    
+</div>
+    
+
+
+    
+    -->
