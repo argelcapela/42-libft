@@ -1067,6 +1067,19 @@ int main()
     return(0);
 }	
 ```
+<br><br>
+```
+char *null;
+char null2[5];
+char *null3 = NULL;
+char vazia[5] = {'\0'};
+
+printf("asdf: %s \n", null);
+printf("%s \n", null2);
+printf("%s \n", null3);
+printf("%s \n", vazia);	
+```
+<br>
 <li>String vazia é uma string que contém 0 caracteres exceto o '\0'.</li>
 <li>String Nula é uma string que foi declarada, tendo alocado memória ou não, porém não foi inicializada, ou seja, apresenta lixo de memória e comportamento inesperado.Quando apontamos uma string para NULL, estamos dizendo que ela está apontando para uma posição NULA, só isso, só vai impedir ela de pegar MEMORY GARBAGE e pode facilitar o uso de if com essa variável, mas ela é NULA e pronto, não aponta para nada!</li><br>
 <i>*Pode ser confuso porque algumas funções retornam que uma string é (null) se não tiver valor dentro dela, mas não confundam, são duas coisas diferentes.</i></p>
