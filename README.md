@@ -455,54 +455,7 @@ Saída:
 <a href="https://miro.com/app/board/uXjVOXd2zpY=/?invite_link_id=153572408505">Clique aqui para uma melhor visualização</a>
 <br><br>
 -->
-<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
-<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
-<br><br>
 
-<h2 id="outras">Outras coisas legais!</h2>
-
-   
-<h1>Trabalhando com Arquivos de cabeçalho & #Include Guards</h1>
-<p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
-   
-<b>Por que usamos ifndef?</b>  
-<p>Em poucas palavras, essa manobra é conhecida como Include Guard, basicamente é impedir que a mesma coisa seja feita mais de uma vez.</p>
-
-```
-#ifndef _INCL_GUARD
-#define _INCL_GUARD
-    /* código a ser executado caso _INCL_GUARD ainda não tenha sido criado no programa */
-#else
-    /* código a ser executado caso _INCL_GUARD já tenha sido criado, ou seja, sempre deixamos vazio para o programa não adicionar 2x o arquivo.h e bugar o programa. */
-#endif    
-```
-    
-    
-<b>get_next_line.h</b>
-    
-```
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-
-/*
- * Aqui vão os protótipos de todas as funções que serão utilizadas no projeto
- * 
- */
-
-#endif
-```   
-    
-<b>get_next_line.c/_utils.c</b>
-    
-```
-#include "get_next_line.h" // incluí os protótipos criados no header dentro do projeto.
-
-/*
- * agora podemos criar as funções aqui, e elas podem ser enxergadas por todos os arquivos C que estiverem vinculados com o arquivo.h.
- * isso é legal para organizar o projeto.
- */
-
-```   
 <h2 id="makefile">Partiu dominar o 'Makefile'?</h2>
 <br><br><br>	
 	
@@ -559,134 +512,100 @@ str r4, [ptrB]
 
 		     
 <br><br>
+<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
+<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
+<br><br>
 
+<h2 id="outras">Outras coisas legais!</h2>
+
+   
+<h4>Trabalhando com Arquivos de cabeçalho & #Include Guards</h4>
+<p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
+   
+<b>Por que usamos ifndef?</b>  
+<p>Em poucas palavras, essa manobra é conhecida como Include Guard, basicamente é impedir que a mesma coisa seja feita mais de uma vez.</p>
+
+```
+#ifndef _INCL_GUARD
+#define _INCL_GUARD
+    /* código a ser executado caso _INCL_GUARD ainda não tenha sido criado no programa */
+#else
+    /* código a ser executado caso _INCL_GUARD já tenha sido criado, ou seja, sempre deixamos vazio para o programa não adicionar 2x o arquivo.h e bugar o programa. */
+#endif    
+```
+    
+    
+<b>get_next_line.h</b>
+    
+```
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+
+/*
+ * Aqui vão os protótipos de todas as funções que serão utilizadas no projeto
+ * 
+ */
+
+#endif
+```   
+    
+<b>get_next_line.c/_utils.c</b>
+    
+```
+#include "get_next_line.h" // incluí os protótipos criados no header dentro do projeto.
+
+/*
+ * agora podemos criar as funções aqui, e elas podem ser enxergadas por todos os arquivos C que estiverem vinculados com o arquivo.h.
+ * isso é legal para organizar o projeto.
+ */
+
+```   
+	
+<br><br><br><br>
+
+```
+int i = 1, j;
+j = i++;	
+```
+<p>i++ é conhecido como Post Increment('Incrementador Depois'), ou seja, ele só vai adicionar + 1 ao valor de i, <u>depois que todas as operações da linha terminarem.</u></p>
+	
+```
+int i = 1, j;
+j = ++i;	
+```
+<p>++i é conhecido como Pre Increment('Incrementador Antes'), ou seja, ele vai adicionar 1 ao valor de i, <u>antes que qualquer operação da linha seja executada.</u></p>
+	
+
+<br><br><br><br>
+	
+```
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char empty[5] = { '\0' };
+    char null[5];
+
+    if( strcmp(empty,null)==0 )
+        puts("Strings are the same");
+    else
+        puts("Strings are not the same");
+
+    return(0);
+}	
+```
+<li>String vazia é uma string que contém 0 caracteres exceto o '\0'.</li>
+<li>String Nula é uma string que foi declarada, tendo alocado memória ou não, porém não foi inicializada, ou seja, apresenta lixo de memória e comportamento inesperado.Quando apontamos uma string para NULL, estamos dizendo que ela está apontando para uma posição NULA, só isso, só vai impedir ela de pegar MEMORY GARBAGE e pode facilitar o uso de if com essa variável, mas ela é NULA e pronto, não aponta para nada!</li><br>
+<i>*Pode ser confuso porque algumas funções retornam que uma string é (null) se não tiver valor dentro dela, mas não confundam, são duas coisas diferentes.</i></p>
+<br><br><br><br>	
+	
+
+<div>
 <h2 id="fontes">Fontes</h2>
 <li><a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a></li>
-
-
+<li><a href="https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i">Diferença entre ++i e i++!</a></li>
+<li><a href="https://c-for-dummies.com/blog/?p=2641">Diferença entre NULL e String Vazia</a></li>
 
 
 </div>
-
-
-
-
-<!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
-    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/125.jpg?raw=true" alt="Avaliação"></div>
-    <div class="item"><img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/libft/libft_test.gif?raw=true" alt="Tripoulle Test"></div>
-</div>
-
-
-<div class="hide-on-portfolio">
-<div align="center">
-	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
-</div>
-
-## :memo: Descrição:
-Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.
-</div>
-
-<div class="col-12">
-
-## :wrench: Tecnologias utilizadas:<br>
-<div style="display: inline_block">
-    <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
-
-</div>
-
-<div class="col-12">
-## :books: Funcionalidades:<br>
-
-
-<table class="special-border col-12">
-<tr>
-<th colspan="2">Bonus</th>
-</tr>
-<tr>
-    <td>Nome</td>
-    <td>O que ela faz?</td>
-</tr>
-<tr>
-    <td>ft_lstnew</td>
-    <td></td>
-</tr>
-<tr>
-    <td>ft_lstadd_front</td>
-    <td></td>
-</tr>
-<tr>
-    <td>ft_lstsize</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstlast</td>
-    <td></td>
-</tr>   
-<tr>
-    <td>ft_lstadd_back</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstdelone</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstclear</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstiter</td>
-    <td></td>
-</tr> 
-<tr>
-    <td>ft_lstmap</td>
-    <td></td>
-</tr> 
-</table>
-    
-</div>
-
-<div class="col-12">
-
-## :rocket: Rodando o projeto:<br>
-    
-<li>Link Github: <a href="https://github.com/argelcapela/42_libft">Link</a></li>
-<li>Link 42 Page: <a href="#">Link</a></li>
- 
-</div>
-<div class="col-12">
-
-## :soon: Implementação futura:<br>
-    
-<li>Nada em mente por enquanto.</li>
-    
-</div>
-<div class="col-12">
-    
-
-## :handshake: Colaboradores:<br>
-<table>
-  <tr>
-    <td align="center">
-      <a href="http://github.com/argelcapela">
-        <img src="https://avatars.githubusercontent.com/u/79276276?s=400&u=055b803f4708d59eaf50208ba601f85844125757&v=4" width="100px;" alt="Foto de Argel Capela!"/><br>
-        <sub>
-          <b>Argel Capela</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-<div class="col-12">
-    
-## :dart: Status do projeto:<br>
-
-<li>Entregue com pontuação 120%.</li>
-    
-</div>
-    
-
-
-    
-    -->
