@@ -54,8 +54,9 @@
 	<li><a href="#ft_strmapi">ft_strmapi</a></li>
 	<li><a href="#ft_striteri">ft_striteri</a></li>
 	<li><a href="#ft_strlcpy">ft_strlcpy</a></li>
-	<li><a href="#memcpy">memcpy</a></li>
+	<li><a href="#ft_memcpy">memcpy</a></li>
 	<li><a href="#ft_memmove">ft_memmove</a></li>
+	<li><a href="#ft_strchr">ft_strchr</a></li>
 	<li><a href="#ft_strrchr">ft_strrchr</a></li>
 	<li><a href="#ft_memchr">ft_memchr</a></li>
 	<li><a href="#ft_strdup">ft_strdup</a></li>
@@ -382,7 +383,50 @@ Saída:
 ```
 	
 <br><br>
+<!--# 6 ft_memcmp-->
+<table id="ft_strncmp">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strncmp&apropos=0&sektion=3&manpath=FreeBSD+13.0-RELEASE&arch=default&format=html">ft_strncmp</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Percorrer os primeiros 'n' bytes dos blocos de memória 's1' e 's2' paralelamente, e retornar a diferença entre o valor ASCII de ambos. Com isso, podemos saber se duas strings são iguais ou não.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strncmp.c">int strcmp(const char *s1, const char *s2);</a></td>
+		<td>
+			<ul>
+				<li>Número < 0 -> Se o "valor ASCII de algum caracter de 's1'" for menor que o "valor ASCII de outro caracter em 's2'" </li>
+				<li>Número > 0 -> Se o "valor ASCII de algum caracter de 's1'" for maior que o "valor ASCII de outro caracter em 's2'" </li>
+				<li>Número = 0 -> Se não houver diferença entre os "valores ASCII 's1'" e os "valores ASCII de 's2'" </li>
+				<li>Se 'n' é zero, o valor de retorno é zero</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
 
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
 	
 <!--# 6 ft_memcmp-->
 <table id="ft_memcmp">
@@ -807,7 +851,7 @@ Saída:
 	
 <br><br>
 <!--# ft_strrrchr -->
-<table id="ft_strrrchr">
+<table id="ft_strrchr">
 <thead>
 	<tr>
 		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrrchr</a></th>
@@ -823,7 +867,7 @@ Saída:
 	<tr>
 		<td>Localiza a última ocorrência de 'c' dentro de 's'.</td>
 		<td>string.h</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrrchr.c">char *strrchr(const char	*s, int	c);</a></td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrchr.c">char *strrchr(const char	*s, int	c);</a></td>
 		<td>
 			<ul>
 				<li>Retorna um ponteiro para o último 'c' localizado em 's'</li>
@@ -850,6 +894,11 @@ Saída:
 
 
 
+	
+	
+	
+	
+	
 	
 <!--
 <b>Passos Essências para se construir uma GNL</b>
