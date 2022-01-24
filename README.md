@@ -168,7 +168,7 @@ Só se for agora truta! 😎👌<br>
 <i>*As funções estão ordenadas em ordem de complexidade de implementação e de entendimento prático, na minha opinião! 😁✔. Vc não é obrigado a concordar!</i><br>
 <br><br>
 <!--# 4 ft_split-->
-<table>
+<table id="ft_split">
 <thead>
 	<tr>
 		<th colspan="4">ft_split</th>
@@ -211,7 +211,7 @@ Saída:
 <br><br>
 	
 <!--# 5 ft_strtrim-->
-<table>
+<table id="ft_strtrim">
 <thead>
 	<tr>
 		<th colspan="4">ft_strtrim</th>
@@ -254,7 +254,7 @@ Saída:
 <br><br>
 
 <!--# 2 atoi	-->
-<table>
+<table id="ft_atoi">
 <thead>
 	<tr>
 		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/atoi.3.html">ft_atoi</a></th>
@@ -297,7 +297,7 @@ Saída:
 <br><br>
 	
 <!--# 3 itoa	-->
-<table>
+<table id="ft_itoa">
 <thead>
 	<tr>
 		<th colspan="4">ft_itoa</th>
@@ -340,7 +340,7 @@ Saída:
 <br><br>
 <!--# 1 strnstr
  -->
-<table>
+<table id="ft_strnstr">
 <thead>
 	<tr>
 		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strnstr&sektion=3">ft_strnstr</a></th>
@@ -385,7 +385,7 @@ Saída:
 
 	
 <!--# 6 ft_memcmp-->
-<table>
+<table id="ft_memcmp">
 <thead>
 	<tr>
 		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/memcmp.3.html">ft_memcmp</a></th>
@@ -429,7 +429,7 @@ Saída:
 	
 <br><br>
 <!--# 7 ft_substr-->
-<table>
+<table id="ft_substr">
 <thead>
 	<tr>
 		<th colspan="4">ft_substr</th>
@@ -472,7 +472,7 @@ Saída:
 	
 <br><br>
 <!--# 8 ft_strjoin-->
-<table>
+<table id="ft_strjoin">
 <thead>
 	<tr>
 		<th colspan="4">ft_strjoin</th>
@@ -514,7 +514,7 @@ Saída:
 	
 <br><br>
 <!--# 9 ft_putnbr_fd-->
-<table>
+<table id="ft_putnbr_fd">
 <thead>
 	<tr>
 		<th colspan="4">ft_putnbr_fd</th>
@@ -555,7 +555,7 @@ Saída:
 	
 <br><br>
 <!--# 10 ft_strmapi-->
-<table>
+<table id="ft_strmapi">
 <thead>
 	<tr>
 		<th colspan="4">ft_strmapi</th>
@@ -598,7 +598,7 @@ Saída:
 	
 <br><br>
 <!--# 11 ft_striteri-->
-<table>
+<table id="ft_striteri">
 <thead>
 	<tr>
 		<th colspan="4">ft_striteri</th>
@@ -640,7 +640,7 @@ Saída:
 	
 <br><br>
 <!--# 12 ft_strlcpy-->
-<table>
+<table id="ft_strlcpy">
 <thead>
 	<tr>
 		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strlcpy&sektion=3">ft_strlcpy</a></th>
@@ -682,11 +682,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
+<!--#  ft_memcpy-->
+<table id="ft_memcpy">
 <thead>
 	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
+		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/memcpy.3.html">ft_memcpy</a></th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -697,12 +697,12 @@ Saída:
 </thead>
 <tbody>
 	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>Copia n bytes do bloco de memória 'src' para o bloco de memória 'dest'.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_memcpy.c">void *memcpy(void *restrict dest, const void *restrict src, size_t n);</a></td>
 		<td>
 			<ul>
-				<li>Nada</li>
+				<li>Ponteiro para 'dest'</li>
 			</ul>
 		</td>
 	</tr>
@@ -723,11 +723,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
+<!--#  ft_memmove -->
+<table id="ft_memmove">
 <thead>
 	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
+		<th colspan="4">ft_memmove</th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -738,12 +738,13 @@ Saída:
 </thead>
 <tbody>
 	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>Copia n bytes de um bloco de memória 'src' para outro bloco de memória 'dest'.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_memmove.c">void *memmove(void *dest, const void *src, size_t n);</a></td>
 		<td>
 			<ul>
-				<li>Nada</li>
+				<li>Retorna um ponteiro para 'dest'</li>
+				<li><i>A diferença entre os dois é que no memcpy você tem que garantir que 'src' e 'dest' são diferentes, ou pode gerar comportamento inesperado, por causa do restrict;</i></li>
 			</ul>
 		</td>
 	</tr>
@@ -764,11 +765,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
+<!--# ft_strrchr -->
+<table id="ft_strrchr">
 <thead>
 	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrchr</a></th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -779,12 +780,12 @@ Saída:
 </thead>
 <tbody>
 	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>Localiza a primeira ocorrência de 'c' dentro de 's'.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrchr.c">char *strrchr(const char	*s, int	c);</a></td>
 		<td>
 			<ul>
-				<li>Nada</li>
+				<li>Retorna um ponteiro para o primeiro 'c' localizado em 's'</li>
 			</ul>
 		</td>
 	</tr>
@@ -805,11 +806,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
+<!--# ft_strrrchr -->
+<table id="ft_strrrchr">
 <thead>
 	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrrchr</a></th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -820,94 +821,12 @@ Saída:
 </thead>
 <tbody>
 	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>Localiza a última ocorrência de 'c' dentro de 's'.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrrchr.c">char *strrchr(const char	*s, int	c);</a></td>
 		<td>
 			<ul>
-				<li>Nada</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>	
-</table>
-<br>
-	
-Exemplo:
-	
-```
-
-```	
-	
-Saída:
-	
-```
-
-```
-	
-<br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
-<thead>
-	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
-	</tr>
-	<tr>
-		<th>O que ela faz?</th>
-		<th>Lib Origem</th>
-		<th>Protótipo</th>
-		<th>Valores de Retorno</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
-		<td>
-			<ul>
-				<li>Nada</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>	
-</table>
-<br>
-	
-Exemplo:
-	
-```
-
-```	
-	
-Saída:
-	
-```
-
-```
-	
-<br><br>
-<!--# 7 ft_putnbr_fd-->
-<table>
-<thead>
-	<tr>
-		<th colspan="4">ft_putnbr_fd</th>
-	</tr>
-	<tr>
-		<th>O que ela faz?</th>
-		<th>Lib Origem</th>
-		<th>Protótipo</th>
-		<th>Valores de Retorno</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Printa um número inteiro 'n' em um File Descriptor.</td>
-		<td>N.O. Libc</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putbnr_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
-		<td>
-			<ul>
-				<li>Nada</li>
+				<li>Retorna um ponteiro para o último 'c' localizado em 's'</li>
 			</ul>
 		</td>
 	</tr>
