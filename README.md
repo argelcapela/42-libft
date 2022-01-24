@@ -37,7 +37,7 @@
     
 # :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
-<li><a href="#algoritmo">Lógica 42-libft</a></li>
+<li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
 <li><a href="#restrict">O que faz o 'Restrict' ?</a></li>
 <br>
 	
@@ -110,13 +110,17 @@
 
 
 <br><br>
-<h2 id="algoritmo">Algoritmo 42-libft?</h2>
-<b>Primeiramente... quantos funções existem no libft? o que elas fazem de um modo simples ?</b>
-<p>São 45 funções no total. </p>
+<h2 id="entendendo">Entendendo a Libft!</h2>
+<b>Primeiramente... quantos funções existem no libft?</b>
+<p>São 45 funções no total. 36 Mandatórias e 9 Bônus.</p>
 	
-<b>Vamos ver uma por uma?</b>	
-<br>
-<!--# 1	-->
+<b>Vamos ver uma por uma?</b><br>	
+Só se for agora truta! 😎👌<br>
+<i>*N.O. Libc: São funções que não são oficiais das bibliotecas padrões do C, mas sim, derivadas.</i><br>
+<i>*As funções estão ordenadas em ordem de complexidade de implementação e de entendimento prático, na minha opinião! 😁✔. Vc não é obrigado a concordar!</i><br>
+<br><br>
+<!--# 1 strnstr
+ -->
 <table>
 <thead>
 	<tr>
@@ -152,7 +156,7 @@ Exemplo:
 ```	
 <br><br>
 	
-<!--# 2	-->
+<!--# 2 atoi	-->
 <table>
 <thead>
 	<tr>
@@ -174,6 +178,146 @@ Exemplo:
 			<ul>
 				<li>O Valor convertido</li>
 				<li>0 em caso de erro</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+	
+<!--# 3 itoa	-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_itoa</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna uma string representando o inteiro recebido como argumento</td>
+		<td>N.O. Libc</td>
+		<td>char *ft_itoa(int n);</td>
+		<td>
+			<ul>
+				<li>A String representando o inteiro.</li>
+				<li>NULL se a alocação falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+	
+<!--# 4 ft_split-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_split</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna um array de strings obtido a partir da divisão de s, usando o caracter 'c' como delimitador.</td>
+		<td>N.O. Libc</td>
+		<td>char **ft_split(char const *s, char c);</td>
+		<td>
+			<ul>
+				<li>Matriz de strings</li>
+				<li>Nulo se a alocação de memória falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+	
+<!--# 5 ft_strtrim-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4">ft_strtrim</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna uma cópia de 's1' com cada caracter de 'set' removido do começo e do fim de uma string.</td>
+		<td>stdlib.h</td>
+		<td>char *ft_strtrim(char const *s1, char const *set);</td>
+		<td>
+			<ul>
+				<li>String aparada, ou seja, com os caracteres cortados do começo e do fim, se houver correspondência é claro!</li>
+				<li>Nulo se a alocação de memória falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+Exemplo:
+	
+```
+
+```	
+<br><br>
+	
+<!--# + ft_memcmp-->
+<table>
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/memcmp.3.html">ft_memcmp</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e retorna uma cópia de 's1' com cada caracter de 'set' removido do começo e do fim de uma string.</td>
+		<td>stdlib.h</td>
+		<td>char *ft_strtrim(char const *s1, char const *set);</td>
+		<td>
+			<ul>
+				<li>String aparada, ou seja, com os caracteres cortados do começo e do fim, se houver correspondência é claro!</li>
+				<li>Nulo se a alocação de memória falhar</li>
 			</ul>
 		</td>
 	</tr>
