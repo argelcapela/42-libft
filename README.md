@@ -5,7 +5,7 @@
 
 <div class="hide-on-portfolio">
 
-<div align="center">
+<div align="center" id="topo">
 	<p><i>"Nunca perca a esperança na humanidade, porque ela é como um oceano. Só porque existem algumas gotas de água suja nele, não quer dizer que esteja sujo por completo."</i><br><b>Mahatma Gandhi</b></p>
 <br><br>
 	<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/img/galeria/portfolio_img_42-libft.jpg?raw=true" width="250px">
@@ -33,7 +33,7 @@
 <li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
 <br><br>
 
-<div class="col-12" id="topo">
+<div class="col-12">
     
 # :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
