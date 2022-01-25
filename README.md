@@ -159,6 +159,7 @@
 
 
 <br><br>
+<img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/icons/desenvolvimento.png?raw=true" width="250px" height="200px">
 <h2 id="entendendo">Entendendo a Libft!</h2>
 <b>Primeiramente... quantos funções existem no libft?</b>
 <p>São 45 funções no total. 36 Mandatórias e 9 Bônus.</p>
