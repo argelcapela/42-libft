@@ -930,6 +930,110 @@ Saída:
 -->
 
 <h2 id="makefile">Partiu dominar o 'Makefile'?</h2>
+<b>O que é Makefile?</b>
+<p>Arquivo que contém vários comandos Shell organizados para serem executados automaticamente, toda vez que você da o comando make. Em poucas palavras, um automatizador de comandos. O objetivo primordial do Makefile segundo muitos portais é automatizar comandos para: primeiro compilar arquivos de código fonte (.c) transformando-os em arquivo objeto, segundo, realizar a "linkedição", transformando esses arquivos objeto (.o) em arquivos binários, executáveis. (.exe/.out/.elf/etc). Então é isso, o Makefile serve para, depois que a gente organiza ele bonitinho, ele faz todo o trabalho pra gente sempre que precisar-mos.</p>
+<br>
+<br>
+<b>Que mais?</b>
+<img src="" alt="compilation and linker">
+<br><br>
+	
+```
+alvo: pré-requisito
+<tab> receita	
+
+# alvo: 
+# - Nome da ação a ser executada
+# - Mais comum colocar o nome do arquivo a ser gerado;
+	
+# pré-requisito: 
+# - Outros alvos, que serão executados, ou criados, antes de executar esse alvo em questão, geralmente os pré-requisitos vem depois e não antes, é como se o Makefile fosse escrito de trás para frente, do último arquivo a ser gerado para o primeiro. (Estranho né, mas é o que eu vejo por ai.. Só aceita.. 🙄😛)
+# - Arquivos que são necessários para gerar o nosso "alvo";	
+
+# receita: 
+# - Comandos SHELL eeeee, fácil.
+# - Comandos para executar a ação que nosso alvo deseja, ou gerar um arquivo desejado.
+
+```
+	
+<br><br>
+<b>Exemplo de Makefile simples para compilar um programinha simples de Hellowolrd:</b>
+<br>
+<i>hellowolrd.h</i>	
+	
+```
+#ifndef HELLO_WOLRD_H
+#define HELLO_WOLRD_H
+
+#include <stdio.h>
+#include <string.h>
+
+char *hello_wolrd();
+
+#endif
+```
+	
+<br><br><br>
+<i>hellowolrd.c</i>
+	
+```
+#include "hellowolrd.h"
+
+char *hello_wolrd()
+{
+	return (strdup("Hello Wolrd!"));
+}
+```	
+	
+<br><br><br>
+<i>hellowolrd.c</i>
+	
+```
+#include "hellowolrd.h"
+
+char *hello_wolrd()
+{
+	return (strdup("Hello Wolrd!"));
+}
+```	
+	
+<br><br><br>
+<i>main.c</i>
+	
+```
+#include "hellowolrd.h"
+
+int main(void)
+{
+	char *resposta = hello_wolrd();
+	printf("%s", resposta);
+	return (0);
+}
+
+```	
+	
+<br><br><br>
+<i>Makefile</i>
+	
+```
+all: hellowolrd
+
+hellowolrd: main.o hellowolrd.o
+	gcc -o hellowolrd main.o hellowolrd.o hellowolrd.h
+
+# arquivo.h não é obrigatório mas..
+# se não é colocado no gcc final, é gerado um arquivo chato (.h.gch)
+
+main.o:
+	gcc -o main.o -c main.c
+
+hellowolrd.o:
+	gcc -o hellowolrd.o -c hellowolrd.c
+
+clean:
+	rm -f *.out *.o *.gch
+
+```		
 <br><br><br>	
 	
 <h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
