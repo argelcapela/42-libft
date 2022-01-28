@@ -935,13 +935,19 @@ Saída:
 <br>
 <br>
 <b>Que mais?</b>
+<br><br>
 <img src="" alt="compilation and linker">
 <br><br>
 	
 ```
+# sintax das diretivas de um makefile comum
+	
 alvo: pré-requisito
 <tab> receita	
-
+```
+<br><br>
+	
+```
 # alvo: 
 # - Nome da ação a ser executada
 # - Mais comum colocar o nome do arquivo a ser gerado;
@@ -1033,8 +1039,17 @@ hellowolrd.o:
 clean:
 	rm -f *.out *.o *.gch
 
-```		
+```	
+<br>
+<ol>
+	<li>Quando executamos o comando make, makefile automaticamente busca o alvo all, sempre.</li>
+	<li>O alvo all, quer ser executado e verifica se tem algum pré-requisito, ele precisa de um arquivo, ou alvo chamado hellowolrd, então ele segui a próxima linha e encontra o que estava buscando e executa a diretiva hellowolrd.</li>
+	<li>Essa por sua vez, precisa executar outras duas chamadas main.o e hellowolrd.o, antes de executar seus comandos.</li>
+	<li>main.o e helloworld.o não precisam de nenhum pré-requisito então só executam seus comandos.</li>
+	<li>Assim como em funções recursivas (🤨 Péssimo exemplo, programador odeia isso! 😬) depois que a condição de encerramento é verdadeira, a função volta de trás para frente executando todo o restante. Ou seja, as condições aqui eram a criação dos arquivos main.o e hellowolrd.o, então logo volta pro alvo hellowolrd e volta pro alvo all.</li>
+</ol>
 <br><br><br>	
+<b>Macros e Variáveis Automáticas</b>
 	
 <h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
 <br><br><br>
