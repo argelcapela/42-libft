@@ -39,6 +39,7 @@
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
 <li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
 <ol>
+<br>
 <i>Mandatório:</i>
 	<li><a href="#ft_split">ft_split</a></li>
 	<li><a href="#ft_strtrim">ft_strtrim</a></li>
@@ -74,6 +75,7 @@
 	<li><a href="#ft_putstr_fd">ft_putstr_fd</a></li>
 	<li><a href="#ft_putendl_fd">ft_putendl_fd</a></li>
 	<li><a href="#ft_putchar_fd">ft_putchar_fd</a></li>
+<br>
 <i>Bônus:</i>
 	<li><a href="#ft_lstnew">ft_lstnew</a></li>
 	<li><a href="#ft_lstadd_front">ft_lstadd_front</a></li>
@@ -154,12 +156,13 @@
 <div align="center">
 
 # :crown: 
-	
+
+<br>
 <a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
 
 </div>    
 <br><br>
-<h2 id="entendendo">Entendendo a Libft!</h2>
+<h2 id="entendendo">Entendendo a Libft:</h2>
 <b>Primeiramente... quantos funções existem no libft?</b>
 <p>São 45 funções no total. 36 Mandatórias e 9 Bônus.<br>
 Não tem segredo, é um projeto trabalhoso não difícil, com calma e paciência você consegui!</p>
