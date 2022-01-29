@@ -2232,20 +2232,17 @@ str r4, [ptrB]
 <p>Agora quando, eu coloco o restrict, o compilador não precisa fazer verificações de consistência, ele vai direto ao ponto, só carrega e executa as operações.</p>    
 <i>Nesse exemplo simples, pode parecer pouco relevante porém, o uso correto do restrict em aplicações mais complexos torna a aplicação mais rápida.</i>
 <br><br>
-
-		     
-<br><br>
-<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
-<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
-<br><br>
-
+	
 <h2 id="ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</h2>
 <br><br>
 <b>1) O que é Tabela ASCII?</b>
 <br><br>
 <img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/ascii-etc/ascii1.png?raw=true" alt="tabela ascii" width="100%">
 <p></p>
-	
+		     
+<br><br>
+<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
+<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
 	
 <br><br><br>
 <h2 id="outras">Outras coisas legais!</h2>
