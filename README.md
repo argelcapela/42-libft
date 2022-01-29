@@ -1049,6 +1049,7 @@ clean:
 	<li>main.o e helloworld.o não precisam de nenhum pré-requisito então só executam seus comandos.</li>
 	<li>Assim como em funções recursivas (🤨 Péssimo exemplo, programador odeia isso! 😬) depois que a condição de encerramento é verdadeira, a função volta de trás para frente executando todo o restante. Ou seja, as condições aqui eram a criação dos arquivos main.o e hellowolrd.o, então logo volta pro alvo hellowolrd e volta pro alvo all.</li>
 </ol>
+	
 <br><br><br>	
 <b>Macros e Variáveis Automáticas</b>
 <br>	
@@ -1068,36 +1069,35 @@ clean:
 	
 ```
 	
-<br><br>	
+<br><br>
+	
+	
+	
+
+<h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
+<br
 <b>Vamos entender um pouco mais sobre o GCC e <a href="https://www.freebsd.org/cgi/man.cgi?query=ar&sektion=1">AR</a>?</b>
 <br>
 	
 ```
-gcc -c arquivo.c					# -c significa compiler, ou seja, ele vai transformar um arquivo de código fonte em um arquivo (.o) arquivo de objeto.
-gcc -o <nome arquivo de saída> arquivos.o 		# -o significa output, mas trata-se do linker, ou seja, irá transformar um arquivo (.o) em um arquivo executável.
+# -c significa compiler, ou seja, ele vai transformar um arquivo de código fonte em um arquivo (.o) arquivo de objeto.
+gcc -c arquivo.c
 
-gcc arquivo.c						# sem as flags -c e -o, o gcc faz tudo junto, transforma em .o e já transforma no executável padrão a.out/a.exe;	
+# -o significa output, mas trata-se do linker, ou seja, irá transformar um arquivo (.o) em um arquivo executável.
+gcc -o <nome arquivo de saída> arquivos.o 		
 
-ar rcs <nome_biblioteca.a> <objetos.o...>		# ar -> Junta objetos.o e cria uma biblioteca.a
-							# r -> Se a biblioteca já existe, substitui os arquivos antigos;
-							# c -> Cria se não existe;
-							# s -> Cria um indice para as funções da biblioteca, assim o acesso fica mais rápido, tipo ID de tabela SQL ao 
-							#      invez do nome completo;
+# sem as flags -c e -o, o gcc faz tudo junto, transforma em .o e já transforma no executável padrão a.out/a.exe;
+gcc arquivo.c							
+
+# ar -> Junta objetos.o e cria uma biblioteca.a
+# r -> Se a biblioteca já existe, substitui os arquivos antigos;
+# c -> Cria se não existe;
+# s -> Cria um indice para as funções da biblioteca, assim o acesso fica mais rápido, tipo ID de tabela SQL ao 
+# invez do nome completo;	
+ar rcs <nome_biblioteca.a> <objetos.o...>
 ```
-	
-<br>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
-<br><br><br>
-   
+
+<br><br>
 <h2 id="restrict">O que é 'restrict' antes das variáveis? é de comer?</h2>
 <b>Que tróço é Restrict Type Qualifier?</b>
 <p>Ele é usado somente em ponteiros, ele é uma promessa, diz para o compilador que esse ponteiro é o único ponteiro que está apontando para o valor apontado, é o único caminho par acessar o valor apontado. Como assim Júnior? Vamos lá! Imagina que temos um ponteiro chamado (int* restrict num1) que está apontando para o número um número 10 qualquer, o restrict promete para o compilador que nenhum outro ponteiro está apontando para esse mesmo número 10. O restrict não afeta nada no código em si, mas sim, no modo como o Assembly, ou o compilador executa o código, se a promessa do restrict não for respeitada, vários erros podem ser gerados no código, porém se usado corretamente, pode tornar uma aplicação muito mais rápida. <br> Bora de exemplo?</p>
@@ -1263,11 +1263,6 @@ printf("%s \n", vazia);
 <li><a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a></li>
 <li><a href="https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i">Diferença entre ++i e i++!</a></li>
 <li><a href="https://c-for-dummies.com/blog/?p=2641">Diferença entre NULL e String Vazia</a></li>
-
-
-
-
-
 </div>
 <br><br><br>
 <a href="#topo">Voltar ao Topo!</a>
