@@ -1614,6 +1614,385 @@ Saída:
 	
 <br><br>
 	
+<!--# ft_lstnew -->
+<table id="ft_lstnew">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstnew</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Escreve um caractere em um FD</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstnew.c">t_list *ft_lstnew(void *content);</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstadd_front -->
+<table id="ft_lstadd_front">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstadd_front</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstadd_front.c">void ft_lstadd_front(t_list **lst, t_list *new);</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstsize -->
+<table id="ft_lstsize">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstsize</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstnew.c">int ft_lstsize(t_list *lst);</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstnew -->
+<table id="ft_lstlast">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstlast</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstlast.c">t_list *ft_lstlast(t_list *lst);</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstadd_back -->
+<table id="ft_lstadd_back">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstnew</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstadd_back.c">void ft_lstadd_back(t_list **lst, t_list *new);</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstdelone -->
+<table id="ft_lstdelone">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstdelone</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Escreve um caractere em um FD</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstdelone.c">void ft_lstdelone(t_list *lst, void (*del)(void
+*));</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstclear -->
+<table id="ft_lstclear">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstclear</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstclear.c">void ft_lstclear(t_list **lst, void (*del)(void *));</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstiter -->
+<table id="ft_lstiter">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstiter</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstiter.c">void ft_lstiter(t_list *lst, void (*f)(void *));</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_lstmap -->
+<table id="ft_lstmap">
+<thead>
+	<tr>
+		<th colspan="4">ft_lstnew</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_lstmap.c">t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));</a></td>
+		<td>
+			<ul>
+				<li></li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
 <!--
 <b>Passos Essências para se construir uma GNL</b>
 	<br>
@@ -1651,9 +2030,7 @@ Saída:
 <br>
 <br>
 <b>Que mais?</b>
-<br><br>
-<img src="" alt="compilation and linker">
-<br><br>
+<br>
 	
 ```
 # sintax das diretivas de um makefile comum
@@ -1680,15 +2057,15 @@ alvo: pré-requisito
 <br><br><br>
 <b>Nomes de Targets(Alvos) padrões para projetos da 42</b>
 ```
-all:
+all -> Executa assim que o comando make é executado;
 	
-bonus:
+bonus -> Para compilar o bônus dos projetos;
 	
-fclean:
+fclean -> Deleta os .o files junto com os .a files do projeto;
 	
-clean:
+clean -> Deleta todos os .o files;
 	
-.PHONY:
+.PHONY -> aqui colocamos os targets que somente executam procedimentos, sem criar um arquivo com seus respectivos nomes. PHONY garante que essas targets sempre serão executadas, evitando bugs de conflito com arquivos que tenham o mesmo nome que os targets.
 	
 ```
 	
