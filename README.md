@@ -960,7 +960,21 @@ alvo: pré-requisito
 # receita: 
 # - Comandos SHELL eeeee, fácil.
 # - Comandos para executar a ação que nosso alvo deseja, ou gerar um arquivo desejado.
-
+```
+	
+<br><br><br>
+<b>Nomes de Targets(Alvos) padrões para projetos da 42</b>
+```
+all:
+	
+bonus:
+	
+fclean:
+	
+clean:
+	
+.PHONY:
+	
 ```
 	
 <br><br>
@@ -1074,8 +1088,10 @@ clean:
 	
 	
 
-<h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
-<br
+<h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2>
+<br>
+<img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/makefile/compilation-and-linker.jpg?raw=true" alt="Compilation and Linker!">
+<br>
 <b>Vamos entender um pouco mais sobre o GCC e <a href="https://www.freebsd.org/cgi/man.cgi?query=ar&sektion=1">AR</a>?</b>
 <br>
 	
@@ -1236,6 +1252,7 @@ int main()
 }	
 ```
 <br><br>
+	
 ```
 char *null;
 char null2[5];
@@ -1257,6 +1274,7 @@ printf("%s \n", vazia);
 <div>
 <h2 id="fontes">Fontes</h2>
 <li><a href="https://www.gnu.org/software/make/manual/make.html">Documentação Oficial Makefile</a></li>
+<li><a href="https://qastack.com.br/programming/2145590/what-is-the-purpose-of-phony-in-a-makefile">.PHONY</a></li>
 <li><a href="https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html#Overall-Options">Documentação Oficial GCC -o and -c</a></li>
 <li><a href="https://www.embarcados.com.br/introducao-ao-makefile/">Tutorial simples e foda de Makefile</a></li>
 <li><a href="https://www.tutorialspoint.com/cprogramming/c_header_files.htm">C Header Files</a></li>
