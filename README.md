@@ -166,11 +166,14 @@
 <b>Primeiramente... quantos funções existem no libft?</b>
 <p>São 45 funções no total. 36 Mandatórias e 9 Bônus.<br>
 Não tem segredo, é um projeto trabalhoso não difícil, com calma e paciência você consegui!</p>
+
+<i>*N.O. Libc: São funções que não são oficiais das bibliotecas padrões do C, mas sim, derivadas.</i><br><br>
+<i>*As funções estão ordenadas da mais difícil para a mais fácil na minha opinião! 😁. Vc não é obrigado(a/e) a concordar!</i><br><br>
+<i>*Muitas funções são super fáceis de codificar, então somente as mais complexos apresentam um link do MIRO com o fluxograma indicando a lógica que foi utilizada para desenvolvê-la.</i><br>
 	
 <b>Vamos ver uma por uma?</b><br>	
-Só se for agora truta! 😎👌<br>
-<i>*N.O. Libc: São funções que não são oficiais das bibliotecas padrões do C, mas sim, derivadas.</i><br>
-<i>*As funções estão ordenadas em ordem de complexidade de implementação e de entendimento prático, na minha opinião! 😁✔. Vc não é obrigado a concordar!</i><br>
+Só se for agora truta! 😎👌
+
 <br><br>
 <!--# 4 ft_split-->
 <table id="ft_split">
@@ -1957,7 +1960,7 @@ Saída:
 <table id="ft_lstmap">
 <thead>
 	<tr>
-		<th colspan="4">ft_lstnew</th>
+		<th colspan="4">ft_lstmap</th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
