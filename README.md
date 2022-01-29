@@ -1190,8 +1190,429 @@ Saída:
 	
 <br><br>		
 	
+<!--# ft_isdigit -->
+<table id="ft_isdigit">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=isdigit&sektion=3&apropos=0&manpath=freebsd">ft_isdigit</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Testa se um caracter é número de 0 a 9.</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_isdigit.c">int isdigit(int c);</a></td>
+		<td>
+			<ul>
+				<li>Zero se não for um caractere entre 0 a 9.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
 	
+Exemplo:
 	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>	
+	
+<!--# ft_isalnum -->
+<table id="ft_isalnum">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=isalnum">ft_isalnum</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Testa se um caractere é número ou alfabético</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_isalnum.c">int ft_isalnum(int c);</a></td>
+		<td>
+			<ul>
+				<li>Zero se caractere não for um número decimal ou não for alfabético</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>	
+	
+<!--# ft_isascii -->
+<table id="ft_isascii">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=isascii&sektion=3&apropos=0&manpath=freebsd">ft_isascii</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Testa se o caractere está presente na tabela ASCII</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_isascii.c">int ft_isascii(int c);</a></td>
+		<td>
+			<ul>
+				<li>Zero se o caractere não estiver presente na tabela ASCII</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>	
+
+<!--# ft_isprint -->
+<table id="ft_isprint">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=isprint&sektion=3&manpath=freebsd-release-ports">ft_isprint</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Testa se o caractere é printável, isto é, que pode ser escrito na tela.<br><a href="#img-tabela-ascii">ver tabela ASCII</a></td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_isprint.c">int ft_isprint(int c);</a></td>
+		<td>
+			<ul>
+				<li>Zero se o caractere não estiver presente na tabela ASCII</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+
+<!--# ft_strlen -->
+<table id="ft_strlen">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strlen&sektion=3">ft_strlen</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Retorna o tamanho de uma string, sem contar com o '\0'</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strlen.c">size_t strlen(const char *s);</a></td>
+		<td>
+			<ul>
+				<li>Retorna o número de caracteres que precede o '\0'</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+
+<!--# ft_toupper -->
+<table id="ft_toupper">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=toupper&apropos=0&sektion=0&manpath=FreeBSD+7.2-RELEASE&format=html">ft_toupper</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Transforma um caractere na sua versão maiscula.</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_toupper.c">int toupper(int c);
+</a></td>
+		<td>
+			<ul>
+				<li>Retorna o número ASCII da versão maiúscula</li>
+				<li>Retorna o endereço ASCII do argumento passado se não há mudança</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_tolower -->
+<table id="ft_tolower">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=tolower&sektion=3&apropos=0&manpath=freebsd">ft_tolower</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Transforma um caractere na sua versão minúscula.</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_tolower.c">int ft_tolower(int c);
+</a></td>
+		<td>
+			<ul>
+				<li>Retorna o número ASCII da versão minúscula</li>
+				<li>Retorna o endereço ASCII do argumento passado se não há mudança</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_putstr_fd -->
+<table id="ft_putstr_fd">
+<thead>
+	<tr>
+		<th colspan="4">ft_putstr_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Escreve uma string em um File Descriptor</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putstr_fd.c">void ft_putstr_fd(char *s, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!-- # ft_putendl_fd -->
+<table id="ft_putendl_fd">
+<thead>
+	<tr>
+		<th colspan="4">ft_putendl_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Escreve uma string em um File Descriptor seguido por um '\n'</td>
+		<td>N.O. Libct</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putendl_fd.c">void ft_putendl_fd(char *s, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_putchar_fd -->
+<table id="ft_putchar_fd">
+<thead>
+	<tr>
+		<th colspan="4">ft_putchar_fd</th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Escreve um caractere em um FD</td>
+		<td>N.O. Libc</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_putchar_fd.c">void ft_putnbr_fd(int n, int fd);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
 	
 <!--
 <b>Passos Essências para se construir uma GNL</b>
