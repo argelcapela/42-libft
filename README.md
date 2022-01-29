@@ -85,9 +85,10 @@
 	<li><a href="#ft_lstiter">ft_lstiter</a></li>
 	<li><a href="#ft_lstmap">ft_lstmap</a></li>
 </ol>
-<li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
 <li><a href="#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
+<li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
 <li><a href="#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
+<li><a href="#ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</a></li>
 <br>
 	
 <b>2) Brinde</b>
@@ -810,11 +811,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# ft_strrchr -->
-<table id="ft_strrchr">
+<!--# ft_strchr -->
+<table id="ft_strchr">
 <thead>
 	<tr>
-		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrchr</a></th>
+		<th colspan="4"><a href="https://man7.org/linux/man-pages/man3/strchr.3.html">ft_strchr</a></th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -827,7 +828,7 @@ Saída:
 	<tr>
 		<td>Localiza a primeira ocorrência de 'c' dentro de 's'.</td>
 		<td>string.h</td>
-		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrchr.c">char *strrchr(const char	*s, int	c);</a></td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strrchr.c">char *strchr(const char *s, int c);</a></td>
 		<td>
 			<ul>
 				<li>Retorna um ponteiro para o primeiro 'c' localizado em 's'</li>
@@ -851,11 +852,11 @@ Saída:
 ```
 	
 <br><br>
-<!--# ft_strrrchr -->
+<!--# ft_strrchr -->
 <table id="ft_strrchr">
 <thead>
 	<tr>
-		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrrchr</a></th>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=strrchr&sektion=3&apropos=0&manpath=freebsd">ft_strrchr</a></th>
 	</tr>
 	<tr>
 		<th>O que ela faz?</th>
@@ -892,11 +893,302 @@ Saída:
 ```
 	
 <br><br>
-
-
-
+<!--# ft_memchr -->
+<table id="ft_memchr">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=memchr&sektion=3&apropos=0&manpath=freebsd">ft_memchr</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Localiza um byte 'c' dentro de uma cadeia de bytes.</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_memchr.c">void *memchr(const void *b, int c, size_t len);</a></td>
+		<td>
+			<ul>
+				<li>Retorna um ponteiro para o byte localizado;</li>
+				<li>Retorna NULL se nenhum byte for encontrad;</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
 	
+Exemplo:
 	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_strdup -->
+<table id="ft_strdup">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?strdup(3)">ft_strdup</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória e realiza a cópia de uma string</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_strdup.c">char *strdup(const char *str);</a></td>
+		<td>
+			<ul>
+				<li>Retorna um ponteiro para a string copiada</li>
+				<li>Retorna NULL se não há memória insuficiente para alocar memória e criar uma cópia da string</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_calloc -->
+<table id="ft_calloc">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=calloc&sektion=3&apropos=0&manpath=redhat">ft_calloc</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Aloca memória para um array com um tamanho de 'nmemb', cada elemento contendo 'size' bytes, depois retorna um ponteiro para a área alocada. A memória desse bloco é setada para zero</td>
+		<td>stdlib.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_calloc.c">void *calloc(size_t nmemb, size_t size);</a></td>
+		<td>
+			<ul>
+				<li>Retorna um ponteiro para a area da memória alocada</li>
+				<li>Retorna NULL se a alocação falhar</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_memset -->
+<table id="ft_memset">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=memset&sektion=3&apropos=0&manpath=redhat">ft_memset</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Preenche a memória com um byte</td>
+		<td>string.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_memset.c">void *memset(void *s, int c, size_t n);</a></td>
+		<td>
+			<ul>
+				<li>Retorna um ponteiro para a area da memória 's'</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>
+	
+<!--# ft_bzero -->
+<table id="ft_bzero">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=bzero&sektion=3&manpath=FreeBSD+6.0-RELEASE">ft_bzero</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Preenche os primeiros 'len' bytes de um bloco de memória com 0.</td>
+		<td>strings.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_bzero.c">void bzero(void	*b, size_t len);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>	
+	
+<!--# ft_bzero -->
+<table id="ft_bzero">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=bzero&sektion=3&manpath=FreeBSD+6.0-RELEASE">ft_bzero</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Preenche os primeiros 'len' bytes de um bloco de memória com 0.</td>
+		<td>strings.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_bzero.c">void bzero(void	*b, size_t len);</a></td>
+		<td>
+			<ul>
+				<li>Nada</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>	
+	
+<!--# ft_isalpha -->
+<table id="ft_isalpha">
+<thead>
+	<tr>
+		<th colspan="4"><a href="https://www.freebsd.org/cgi/man.cgi?query=isalpha&sektion=3&apropos=0&manpath=freebsd">ft_isalpha</a></th>
+	</tr>
+	<tr>
+		<th>O que ela faz?</th>
+		<th>Lib Origem</th>
+		<th>Protótipo</th>
+		<th>Valores de Retorno</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Testa se um caracter é alfabético</td>
+		<td>ctype.h</td>
+		<td><a href="https://github.com/argelcapela/42-libft/blob/main/src/ft_isalpha.c">int isalpha(int c);</a></td>
+		<td>
+			<ul>
+				<li>Zero se não for um caracter alfabético</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>	
+</table>
+<br>
+	
+Exemplo:
+	
+```
+
+```	
+	
+Saída:
+	
+```
+
+```
+	
+<br><br>		
 	
 	
 	
@@ -928,6 +1220,8 @@ Saída:
 <a href="https://miro.com/app/board/uXjVOXd2zpY=/?invite_link_id=153572408505">Clique aqui para uma melhor visualização</a>
 <br><br>
 -->
+
+
 
 <a href="https://www.gnu.org/software/make/manual/make.html"><h2 id="makefile">Partiu dominar o 'Makefile'?</h2></a>
 <br>
@@ -1172,6 +1466,15 @@ str r4, [ptrB]
 <a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
 <br><br>
 
+<h2 id="ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</h2>
+<br><br>
+<b>1) O que é Tabela ASCII?</b>
+<br><br>
+<img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/ascii-etc/ascii1.png?raw=true" alt="tabela ascii" width="100%">
+<p></p>
+	
+	
+<br><br><br>
 <h2 id="outras">Outras coisas legais!</h2>
 
    
