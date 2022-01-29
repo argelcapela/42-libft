@@ -929,7 +929,8 @@ Saída:
 <br><br>
 -->
 
-<h2 id="makefile">Partiu dominar o 'Makefile'?</h2>
+<a href="https://www.gnu.org/software/make/manual/make.html"><h2 id="makefile">Partiu dominar o 'Makefile'?</h2></a>
+<br>
 <b>O que é Makefile?</b>
 <p>Arquivo que contém vários comandos Shell organizados para serem executados automaticamente, toda vez que você da o comando make. Em poucas palavras, um automatizador de comandos. O objetivo primordial do Makefile segundo muitos portais é automatizar comandos para: primeiro compilar arquivos de código fonte (.c) transformando-os em arquivo objeto, segundo, realizar a "linkedição", transformando esses arquivos objeto (.o) em arquivos binários, executáveis. (.exe/.out/.elf/etc). Então é isso, o Makefile serve para, depois que a gente organiza ele bonitinho, ele faz todo o trabalho pra gente sempre que precisar-mos.</p>
 <br>
@@ -1050,6 +1051,49 @@ clean:
 </ol>
 <br><br><br>	
 <b>Macros e Variáveis Automáticas</b>
+<br>	
+	
+```
+# sintax diretiva makefile (usando macros)
+# calma, não sai correndo, beba água, vamos estudar direitinho 😎😝
+	
+%.o: %.c %.h
+<tab> @$ <$	
+	    
+# % -> Pega o nome antes do .;
+
+# $@ -> Pega o nome do target(alvo);
+
+# %< -> Pega o primeiro pré-requisito;
+	
+```
+	
+<br><br>	
+<b>Vamos entender um pouco mais sobre o GCC e <a href="https://www.freebsd.org/cgi/man.cgi?query=ar&sektion=1">AR</a>?</b>
+<br>
+	
+```
+gcc -c arquivo.c					# -c significa compiler, ou seja, ele vai transformar um arquivo de código fonte em um arquivo (.o) arquivo de objeto.
+gcc -o <nome arquivo de saída> arquivos.o 		# -o significa output, mas trata-se do linker, ou seja, irá transformar um arquivo (.o) em um arquivo executável.
+
+gcc arquivo.c						# sem as flags -c e -o, o gcc faz tudo junto, transforma em .o e já transforma no executável padrão a.out/a.exe;	
+
+ar rcs <nome_biblioteca.a> <objetos.o...>		# ar -> Junta objetos.o e cria uma biblioteca.a
+							# r -> Se a biblioteca já existe, substitui os arquivos antigos;
+							# c -> Cria se não existe;
+							# s -> Cria um indice para as funções da biblioteca, assim o acesso fica mais rápido, tipo ID de tabela SQL ao 
+							#      invez do nome completo;
+```
+	
+<br>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 <h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2> 
 <br><br><br>
@@ -1065,6 +1109,7 @@ void updatePtrs(size_t *ptrA, size_t *ptrB, size_t *val)
   *ptrB += *val;
 }
 ```
+	
 ``` 
 ; Código Assembly RISC Machine (hipotético)
 ldr r12, [val]     ; Carrega/"Copia" a memória alocada apontada por [val] no registrador r12
@@ -1078,6 +1123,7 @@ ldr r12, [val]     ; Carrega/"Copia" a memória alocada apontada por [val] no re
 add r3, r3, r12    ; Executa a soma r3 = r3 + r12
 str r3, [ptrB]     ; Pega o valor do registrador r3 e joga na memória alocada apontada por ptrA.
 ``` 
+	
 <p>O Compilador sem o restrict faz uma verificação pra saber se o valor de val mudou, caso val apontasse para o mesmo bloco de memória que os demas ponteiros. </p>
     
     
@@ -1088,6 +1134,7 @@ void updatePtrs(size_t *restrict ptrA, size_t *restrict ptrB, size_t *restrict v
   *ptrB += *val;
 }
 ```
+	
 ``` 
 ; Código Assembly RISC Machine (hipotético)
 ldr r12, [val]  ; Aqui o registrador r12 carrega o bloco de memória apontado por [val] somente uma vez. Porque o restrict, garante pro compilador que esse ponteiro é o único                     ; caminho ou seja, esse valor não vai mudar nas outras operações.
@@ -1098,6 +1145,7 @@ add r4, r4, r12
 str r3, [ptrA]  ; Executa as operações de atualização.
 str r4, [ptrB]
 ``` 
+	
 <p>Agora quando, eu coloco o restrict, o compilador não precisa fazer verificações de consistência, ele vai direto ao ponto, só carrega e executa as operações.</p>    
 <i>Nesse exemplo simples, pode parecer pouco relevante porém, o uso correto do restrict em aplicações mais complexos torna a aplicação mais rápida.</i>
 <br><br>
@@ -1208,9 +1256,16 @@ printf("%s \n", vazia);
 
 <div>
 <h2 id="fontes">Fontes</h2>
+<li><a href="https://www.gnu.org/software/make/manual/make.html">Documentação Oficial Makefile</a></li>
+<li><a href="https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html#Overall-Options">Documentação Oficial GCC -o and -c</a></li>
+<li><a href="https://www.embarcados.com.br/introducao-ao-makefile/">Tutorial simples e foda de Makefile</a></li>
+<li><a href="https://www.tutorialspoint.com/cprogramming/c_header_files.htm">C Header Files</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a></li>
 <li><a href="https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i">Diferença entre ++i e i++!</a></li>
 <li><a href="https://c-for-dummies.com/blog/?p=2641">Diferença entre NULL e String Vazia</a></li>
+
+
+
 
 
 </div>
