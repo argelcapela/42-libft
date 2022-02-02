@@ -1,7 +1,8 @@
-<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
+<!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
 <div class="item"><video id="portfolio-video" data-yt2html5="https://www.youtube.com/watch?v=xu8Zel1u-6k" controls></video></div>
-<div class="item"><img src="blob:https://acapela12.imgur.com/d65c2652-b481-40b3-b853-ade7852f97d8" alt="tripoulle tester libft"></div>
+<div class="item"><img src="https://i.imgur.com/JGrOe9Y.gif" alt="tripoulle tester libft"></div>
 </div>
+-->
 
 
 <div class="hide-on-portfolio">
