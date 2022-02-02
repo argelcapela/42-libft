@@ -14,14 +14,14 @@
 </div>
 <br><br>
 	
-# :sparkles: O que é a 42-libft ?
+# ✨ O que é a 42-libft ?
 <b>Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.</b><br>
 
 </div>
 
 <div class="col-12">
 
-# :wrench: Tecnologias utilizadas:<br>
+# 🔧 Tecnologias utilizadas:<br>
 <div style="display: inline_block">
     <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 
@@ -29,7 +29,7 @@
 
 <div class="col-12">
 
-# :rocket: Rodando o projeto:<br>
+# 🚀 Rodando o projeto:<br>
 <b>Links:</b>
 <li>Repositório Github: <a href="https://github.com/argelcapela/42-libft">Link</a></li>
 <li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
@@ -37,7 +37,7 @@
 
 <div class="col-12">
     
-# :pushpin: O que eu aprendi e como foi desenvolvido esse projeto?<br>
+# 📌 O que eu aprendi e como foi desenvolvido esse projeto?<br>
 <b>1) Conhecimento adquiridos para construir a libft</b><br>
 <li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
 <ol>
@@ -104,7 +104,7 @@
 	
 <div class="col-12">
 	
-# :handshake: Colaboradores:<br>
+# 🤝 Colaboradores:<br>
 <table>
   <tr>
     <td align="center">
@@ -122,7 +122,7 @@
 	
 <div class="col-12">
 	
-# :dart: Status do projeto:<br>
+# 📅 Status do projeto:<br>
 <img src="https://github.com/argelcapela/argelcapela.rf.gd/blob/main/assets/icons/finalizado.png?raw=true" width="250px" height="200px">
 </div>
 	
@@ -130,7 +130,7 @@
 
 <div class="col-12">
 	
-# :clipboard: Nota:<br>
+# 📋 Nota:<br>
 <img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/assets/nota-125.png?raw=true" width="150px" height="150px" alt="nota libft">
 </div>
 	
@@ -138,7 +138,7 @@
 
 <div class="col-12">
 	
-# :bug:	 Erros:<br>
+# 🦟 Erros:<br>
 <p>Identificou um erro? Por favor me informe! ou fique a vontade para criar um *issue* aqui no Github e contribuir.</p>
 <p>Também fique a vontade para opinar, criticar, xingar, elogiar etc. Para mim é tudo a mesma coisa, fonte de crescimento pessoal. Eu não sei tudo, mas estou buscando ser um profissional 1% melhor a cada dia.</p>
 </div>
@@ -157,7 +157,7 @@
 	
 <div align="center">
 
-# :crown: 
+# 👑
 
 <br>
 <a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
