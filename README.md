@@ -2293,9 +2293,7 @@ str r4, [ptrB]
 <br><br>
 	
 <h2 id="ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</h2>
-<br><br>
-<b>1) O que é Tabela ASCII, Unicode e UTF-8?</b>
-<br><br>
+<br>
 <b>O que é ASCII?</b>
 <p>(American Standard for Comunication and Information Interchange) Código Padrão Americano para o Intercâmbio de Informação. É uma tabela que foi criada para ajudar os americanos na época para enviar mensagens entre si, trata-se de uma tabela com de até 7 bits, ou seja, 128 caracteres no máximo (contando com o 0). A ideia é que cada caracter é convertido em um valor binário de 7bits para que o computador entenda, envie esses bits, e outro computador, leia esses bits, e converta-os novamente no caracter correspondente na tabela ASCII.</p>
 <img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
@@ -2304,11 +2302,9 @@ str r4, [ptrB]
 <br><br><br>	
 <b>O que é Unicode?</b>
 <p>("Um código")Eu entendo como uma tabelona gigante, de até 32bits, ou seja, com a capacidade de armazenar até 2 bilhões de caracteres. Pra que tudo isso ? Simples, cada pais sem sua própria "tabela ASCII" para envio de informações entre sistemas no seu próprio idioma, o Unicode é a organização de todas essas tabelas "ASCIIs" do mundo numa tabelona só. Cada caracter dessa tabelona, é represetando por um cara chamado "Code Point", um número hexadecimal, olha que maravilha. Porém o Unicode por si só, não resolve todo o BO, por que? Os gringos receberam a primeira fatia do Unicode, então pra eles é como se não fizesse diferença, mas o restante do mundo, precisa criar algoritmos de codificação, queee?? isso mesmo, os carinhos que vão pegar os bytes enviados do EUA para o Japão, analisar, "traduzir" esse inglês, requesenta qual code point na tablea Unicode, então traduzido, traduzir também em binário e exibir bonitinho no PC Japonês. É um rolê muito complexo, mas o UTF-8 vem se destacando, se tornando o padrão.   </p>
-<img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
 <br><br><br>	
 <b>UTF-8?</b>
 <p>Unicode Transformation Format (Formato de transformação Unicode). Como explicado anteriormente, esse cara "traduz do idioma local para o Unicode universal" e vice versa, de um modo otimizado. Dessa forma realizando a perfeita troca de informações entre sistemas de regiões distintas.</p>
-<img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
 <br><br><br>
 <h2 id="outras">Outras coisas legais!</h2>
 
