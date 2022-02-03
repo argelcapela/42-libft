@@ -2151,11 +2151,41 @@ clean:
 # %< -> Pega o primeiro pré-requisito;
 	
 ```
-	
-<br><br>
-	
-	
-	
+<br><br><br>
+
+<b>Pegando exemplo anterior, podemos tornar nosso Makefile mais inteligente:</b><br>
+<br>
+<i>Makefile otimizado:</i>
+
+```
+SRCS= $(wildcard *.c)
+
+OBJS= $(SRCS:.c=.o)
+
+# se $(OBJS) for usado como pré-requisito e não tiver nenhum comando para compilar os objetos, esse cara, faz automaticamente a compilação dos objetos com o comando cc -o -c certinho;
+
+all: hellowolrd
+
+hellowolrd: $(OBJS)
+	gcc -o $@ $^
+
+%.o: %.c
+	gcc -Wall -Wextra -Werror -o $@ -c $<
+
+re: fclean all
+
+fclean: clean
+	rm -f *.out hellowolrd
+
+clean:
+	rm -f *.o *.gch
+
+#se o .h não é colocado no gcc final é gerado um arquivo (.h.gch) mas não é obrigatório...	
+
+```	
+
+<p>Agora é só praticar, testar, praticar mais e não esqueça, a documentação <a href="https://www.gnu.org/software/make/manual/make.html"> OFICIAL </a> ,é sua melhor amiga</p>		
+<br><br>	
 
 <h2 id="biblioteca">Que parada é essa de bibliotecas em C?</h2>
 <br>
@@ -2237,19 +2267,24 @@ str r4, [ptrB]
 	
 <h2 id="ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</h2>
 <br><br>
-<b>1) O que é Tabela ASCII?</b>
+<b>1) O que é Tabela ASCII, Unicode e UTF-8?</b>
 <br><br>
-<img src="https://github.com/argelcapela/42-trilha-de-fundamentos/blob/main/ascii-etc/ascii1.png?raw=true" alt="tabela ascii" width="100%">
-<p></p>
-		     
-<br><br>
-<h2 id="step-by-step">42-libft Passo a Passo</h2><br>
-<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
-	
+<b>O que é ASCII?</b>
+<p>(American Standard for Comunication and Information Interchange) Código Padrão Americano para o Intercâmbio de Informação. É uma tabela que foi criada para ajudar os americanos na época para enviar mensagens entre si, trata-se de uma tabela com de até 7 bits, ou seja, 128 caracteres no máximo (contando com o 0). A ideia é que cada caracter é convertido em um valor binário de 7bits para que o computador entenda, envie esses bits, e outro computador, leia esses bits, e converta-os novamente no caracter correspondente na tabela ASCII.</p>
+<img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
+<p>A Tabela ASCII extendida, funciona do mesmo modo que a primeira, porém com o acréscimo do último byte, agora os valores são de até 8 bits, ou seja 255 caracteres diferentes( contando como 0). Podemos notar que não são só, caracteres, temos símbolos também.<br> Agora imagine, o mundo é enorme, então os outros alfabetos do mundo não podem ser representados pela tabela ASCII, para isso, surgiu a necessidade de um novo amigo o Unicode.</p>
+<img src="https://i.imgur.com/uuGT9ZT.png" alt="tabela ascii extended" width="100%">
+<br><br><br>	
+<b>O que é Unicode?</b>
+<p>("Um código")Eu entendo como uma tabelona gigante, de até 32bits, ou seja, com a capacidade de armazenar até 2 bilhões de caracteres. Pra que tudo isso ? Simples, cada pais sem sua própria "tabela ASCII" para envio de informações entre sistemas no seu próprio idioma, o Unicode é a organização de todas essas tabelas "ASCIIs" do mundo numa tabelona só. Cada caracter dessa tabelona, é represetando por um cara chamado "Code Point", um número hexadecimal, olha que maravilha. Porém o Unicode por si só, não resolve todo o BO, por que? Os gringos receberam a primeira fatia do Unicode, então pra eles é como se não fizesse diferença, mas o restante do mundo, precisa criar algoritmos de codificação, queee?? isso mesmo, os carinhos que vão pegar os bytes enviados do EUA para o Japão, analisar, "traduzir" esse inglês, requesenta qual code point na tablea Unicode, então traduzido, traduzir também em binário e exibir bonitinho no PC Japonês. É um rolê muito complexo, mas o UTF-8 vem se destacando, se tornando o padrão.   </p>
+<img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
+<br><br><br>	
+<b>UTF-8?</b>
+<p>Unicode Transformation Format (Formato de transformação Unicode). Como explicado anteriormente, esse cara "traduz do idioma local para o Unicode universal" e vice versa, de um modo otimizado. Dessa forma realizando a perfeita troca de informações entre sistemas de regiões distintas.</p>
+<img src="https://i.imgur.com/ukA7MRd.png" alt="tabela ascii" width="100%">
 <br><br><br>
 <h2 id="outras">Outras coisas legais!</h2>
 
-   
 <h4>Trabalhando com Arquivos de cabeçalho & #Include Guards</h4>
 <p>Nós podemos modularizar nossos projetos em C, utilizando arquivos de cabeçalho, como assim ? Se nós temos um código grande pra fazer, mas queremos separar em arquivos C diferentes, por exemplo na GNL, próximo projeto, um arquivo é para a função GNL, outro é para as funções auxíliares, para isso podemos trabalhar com arquivos .h, ou arquivos de cabeçalho.</p>
    
@@ -2356,6 +2391,9 @@ printf("%s \n", vazia);
 <li><a href="https://en.wikipedia.org/wiki/Include_guard">#Include Guard</a></li>
 <li><a href="https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i">Diferença entre ++i e i++!</a></li>
 <li><a href="https://c-for-dummies.com/blog/?p=2641">Diferença entre NULL e String Vazia</a></li>
+<li><a href="https://www.youtube.com/watch?v=MijmeoH9LT4">Gringo muito louco, explicando ASCII e Unicode</a></li>
+<li><a href="https://www.treinaweb.com.br/blog/uma-introducao-a-ascii-e-unicode">Básico ASCII, Unicode e UTF-8</a></li>
+
 </div>
 <br><br><br>
 <a href="#topo">Voltar ao Topo!</a>
