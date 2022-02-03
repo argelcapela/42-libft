@@ -33,6 +33,35 @@
 <b>Links:</b>
 <li>Repositório Github: <a href="https://github.com/argelcapela/42-libft">Link</a></li>
 <li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
+	
+<br>
+<b> A seguir temos um exemplo de main para testar a LIBFT:</b><br><br>
+
+```
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
+{
+	char *str = ft_strdup("argel capela");
+	printf("%s", str);
+	return(0);
+}
+
+```
+	
+<br>
+😎compilando...<br>
+	
+```bash
+$ make 
+# Na pasta raiz do projeto
+	
+$ gcc libftprintf.a main.c && ./a.out	
+```
+	
+<br><br>	
+	
 <br><br>
 <div class="col-12">
     
@@ -95,7 +124,6 @@
 <br>
 	
 <b>2) Brinde</b>
-<li><a href="#step-by-step"> 42-libft Passo a Passo</a></li>
 <li><a href="#outras">Outras Coisas Legais</a></li>
 <li><a href="#fontes">Fontes</a></li>
 </div>
