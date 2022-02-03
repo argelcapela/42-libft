@@ -35,6 +35,28 @@
 <li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
 <br><br>
 
+<b> A seguir temos um exemplo de main para testar a LIBFT:</b><br><br>
+
+```
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
+{
+	char *str = ft_strdup("argel capela");
+	printf("%s", str);
+	return(0);
+}
+
+```
+	
+<br>
+😎compilando...<br>
+	
+```bash
+$ gcc libft.a main.c && ./a.out	
+```
+
 <div class="col-12">
     
 # 📌 O que eu aprendi e como foi desenvolvido esse projeto?<br>
