@@ -57,7 +57,7 @@ int main(void)
 $ make 
 # Na pasta raiz do projeto
 	
-$ gcc libftprintf.a main.c && ./a.out	
+$ gcc main.c libft.a && ./a.out	
 ```
 	
 <br><br>	
@@ -121,6 +121,8 @@ $ gcc libftprintf.a main.c && ./a.out
 <li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
 <li><a href="#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
 <li><a href="#ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</a></li>
+<li><a href="#bases">Partiu dominar a conversão entre bases? 😎👌</a></li>	
+
 <br>
 	
 <b>2) Brinde</b>
@@ -2302,10 +2304,32 @@ str r4, [ptrB]
 <br><br><br>	
 <b>O que é Unicode?</b>
 <p>("Um código")Eu entendo como uma tabelona gigante, de até 32bits, ou seja, com a capacidade de armazenar até 2 bilhões de caracteres. Pra que tudo isso ? Simples, cada pais sem sua própria "tabela ASCII" para envio de informações entre sistemas no seu próprio idioma, o Unicode é a organização de todas essas tabelas "ASCIIs" do mundo numa tabelona só. Cada caracter dessa tabelona, é represetando por um cara chamado "Code Point", um número hexadecimal, olha que maravilha. Porém o Unicode por si só, não resolve todo o BO, por que? Os gringos receberam a primeira fatia do Unicode, então pra eles é como se não fizesse diferença, mas o restante do mundo, precisa criar algoritmos de codificação, queee?? isso mesmo, os carinhos que vão pegar os bytes enviados do EUA para o Japão, analisar, "traduzir" esse inglês, requesenta qual code point na tablea Unicode, então traduzido, traduzir também em binário e exibir bonitinho no PC Japonês. É um rolê muito complexo, mas o UTF-8 vem se destacando, se tornando o padrão.   </p>
-<br><br><br>	
+<br><br>
 <b>UTF-8?</b>
 <p>Unicode Transformation Format (Formato de transformação Unicode). Como explicado anteriormente, esse cara "traduz do idioma local para o Unicode universal" e vice versa, de um modo otimizado. Dessa forma realizando a perfeita troca de informações entre sistemas de regiões distintas.</p>
-<br><br><br>
+<br><br>
+	
+<h2 id="bases">Partiu dominar a conversão entre bases? 😎👌</h2>
+<br>
+<b>Decimal para Hexa?</b>
+
+<br><br>	
+<b>Hexa para Decimal?</b>
+	
+<br><br>
+<b>Hexa para Binário?</b>
+	
+<br><br>
+<b>Binário para Hexa?</b>
+
+<br><br>
+<b>Decimal para Binário?</b>
+	
+<br><br>
+<b>Binário para Decimal?</b>
+
+	
+<br><br>
 <h2 id="outras">Outras coisas legais!</h2>
 
 <h4>Trabalhando com Arquivos de cabeçalho & #Include Guards</h4>
