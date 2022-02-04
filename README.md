@@ -71,63 +71,63 @@ $ gcc main.c libft.a && ./a.out
 <ol>
 <br>
 <i>Mandatório:</i>
-	<li><a href="#ft_split">ft_split</a></li>
-	<li><a href="#ft_strtrim">ft_strtrim</a></li>
-	<li><a href="#ft_atoi">ft_atoi</a></li>
-	<li><a href="#ft_itoa">ft_itoa</a></li>
-	<li><a href="#ft_strnstr">ft_strnstr</a></li>
-	<li><a href="#ft_strncmp">ft_strncmp</a></li>
-	<li><a href="#ft_memcmp">ft_memcmp</a></li>
-	<li><a href="#ft_substr">ft_substr</a></li>
-	<li><a href="#ft_join">ft_join</a></li>
-	<li><a href="#ft_strlcat">ft_strlcat</a></li>
-	<li><a href="#ft_putnbr_fd">ft_putnbr_fd</a></li>
-	<li><a href="#ft_strmapi">ft_strmapi</a></li>
-	<li><a href="#ft_striteri">ft_striteri</a></li>
-	<li><a href="#ft_strlcpy">ft_strlcpy</a></li>
-	<li><a href="#ft_memcpy">memcpy</a></li>
-	<li><a href="#ft_memmove">ft_memmove</a></li>
-	<li><a href="#ft_strchr">ft_strchr</a></li>
-	<li><a href="#ft_strrchr">ft_strrchr</a></li>
-	<li><a href="#ft_memchr">ft_memchr</a></li>
-	<li><a href="#ft_strdup">ft_strdup</a></li>
-	<li><a href="#ft_calloc">ft_calloc</a></li>
-	<li><a href="#ft_memset">ft_memset</a></li>
-	<li><a href="#ft_bzero">ft_bzero</a></li>
-	<li><a href="#ft_isalpha">ft_isalpha</a></li>
-	<li><a href="#ft_isdigit">ft_isdigit</a></li>
-	<li><a href="#ft_isalnum">ft_isalnum</a></li>
-	<li><a href="#ft_isascii">ft_isascii</a></li>
-	<li><a href="#ft_isprint">ft_isprint</a></li>
-	<li><a href="#ft_strlen">ft_strlen</a></li>
-	<li><a href="#ft_toupper">ft_toupper</a></li>
-	<li><a href="#ft_tolower">ft_tolower</a></li>
-	<li><a href="#ft_putstr_fd">ft_putstr_fd</a></li>
-	<li><a href="#ft_putendl_fd">ft_putendl_fd</a></li>
-	<li><a href="#ft_putchar_fd">ft_putchar_fd</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_split">ft_split</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strtrim">ft_strtrim</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_atoi">ft_atoi</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_itoa">ft_itoa</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strnstr">ft_strnstr</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strncmp">ft_strncmp</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memcmp">ft_memcmp</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_substr">ft_substr</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_join">ft_join</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlcat">ft_strlcat</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putnbr_fd">ft_putnbr_fd</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strmapi">ft_strmapi</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_striteri">ft_striteri</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlcpy">ft_strlcpy</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memcpy">memcpy</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memmove">ft_memmove</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strchr">ft_strchr</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strrchr">ft_strrchr</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memchr">ft_memchr</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strdup">ft_strdup</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_calloc">ft_calloc</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memset">ft_memset</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_bzero">ft_bzero</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isalpha">ft_isalpha</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isdigit">ft_isdigit</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isalnum">ft_isalnum</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isascii">ft_isascii</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isprint">ft_isprint</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlen">ft_strlen</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_toupper">ft_toupper</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_tolower">ft_tolower</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putstr_fd">ft_putstr_fd</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putendl_fd">ft_putendl_fd</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putchar_fd">ft_putchar_fd</a></li>
 <br>
 <i>Bônus:</i>
-	<li><a href="#ft_lstnew">ft_lstnew</a></li>
-	<li><a href="#ft_lstadd_front">ft_lstadd_front</a></li>
-	<li><a href="#ft_lstsize">ft_lstsize</a></li>
-	<li><a href="#ft_lstlast">ft_lstlast</a></li>
-	<li><a href="#ft_lstadd_back">ft_lstadd_back</a></li>
-	<li><a href="#ft_lstdelone">ft_lstdelone</a></li>
-	<li><a href="#ft_lstclear">ft_lstclear</a></li>
-	<li><a href="#ft_lstiter">ft_lstiter</a></li>
-	<li><a href="#ft_lstmap">ft_lstmap</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstnew">ft_lstnew</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstadd_front">ft_lstadd_front</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstsize">ft_lstsize</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstlast">ft_lstlast</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstadd_back">ft_lstadd_back</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstdelone">ft_lstdelone</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstclear">ft_lstclear</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstiter">ft_lstiter</a></li>
+	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstmap">ft_lstmap</a></li>
 </ol>
-<li><a href="#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
-<li><a href="#makefile">Partiu dominar o 'Makefile'?</a></li>
-<li><a href="#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
-<li><a href="#ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</a></li>
-<li><a href="#bases">Partiu dominar a conversão entre bases? 😎👌</a></li>	
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#makefile">Partiu dominar o 'Makefile'?</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#bases">Partiu dominar a conversão entre bases? 😎👌</a></li>	
 
 <br>
 	
 <b>2) Brinde</b>
-<li><a href="#outras">Outras Coisas Legais</a></li>
-<li><a href="#fontes">Fontes</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#outras">Outras Coisas Legais</a></li>
+<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#fontes">Fontes</a></li>
 </div>
 <br>	
 	
