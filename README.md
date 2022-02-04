@@ -190,4 +190,9 @@ $ gcc main.c libft.a && ./a.out
 
 <br>
 <a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
+<br><br>
+<i>Fique a vontade para conferir meu estudo sobre a 42-libft, clicando no icone bonitinho abaixo. <br> Ah! Se quiser deixe um comentário também: 😎</i><br><br>
+<a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md" target="_BLANK"><img src="https://i.imgur.com/O96qRkt.png" alt="conferir estudo"></a>
 <br>
+</div>   
+
