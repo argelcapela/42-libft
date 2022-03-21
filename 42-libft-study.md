@@ -1,4 +1,4 @@
-</div>    
+<h1>Atualizações em breve...</h1>
 <br><br>
 <h2 id="entendendo">Entendendo a Libft:</h2>
 <b>Primeiramente... quantos funções existem no libft?</b>
