@@ -6,7 +6,7 @@
 
 <!-- <div class="item"><video id="portfolio-video" data-yt2html5="https://www.youtube.com/watch?v=xu8Zel1u-6k" controls></video></div> -->
 <div class="hide-on-portfolio">
-teste
+
 <div align="center" id="topo">
 	<p><i>"Nunca perca a esperança na humanidade, porque ela é como um oceano. Só porque existem algumas gotas de água suja nele, não quer dizer que esteja sujo por completo."</i><br><b>Mahatma Gandhi</b></p>
 <br><br>
@@ -18,6 +18,7 @@ teste
 <b>Esse projeto visa construir do zero uma biblioteca de funções fundamentais para trabalhar com a linguagem C. Por exemplo: substring(), trim(), strdup() etc. Um excelente exercício de lógica, Makefile e construção de bibliotecas.</b><br>
 
 </div>
+<br>
 
 <div class="col-12">
 
@@ -26,18 +27,33 @@ teste
     <img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 
 </div>
-
+<br>
 <div class="col-12">
 
 # 🚀 Rodando o projeto:<br>
-<b>Links:</b>
-<li>Repositório Github: <a href="https://github.com/argelcapela/42-libft">Link</a></li>
-<li>Intra 42SP: <a href="https://projects.intra.42.fr/projects/42cursus-libft">Link</a></li>
-	
-<br>
-<b> A seguir temos um exemplo de main para testar a LIBFT:</b><br><br>
+```bash
+# 1) Clone o projeto
+$ git clone https://github.com/argelcapela/42-libft.git 	
 
+# 2) Entre na pasta app
+$ cd lists ou challenges	
+	
+# 3) Compile a libft. A linha de comando a seguir, irá gerar um arquivo chamado libft.a
+$ make
+
+# 4) Crie um main.c, contendo as funções que você deseja testar da libft. 
+# Adicione um #include "libft.h" no topo para incluir a libft no seu main, 
+# e compile o arquivo main junto com a libft.a 
+$ gcc libft.a main.c
+
+# 5) Execute
+$ ./a.out
+	
 ```
+
+```c
+/* main.c */
+	
 #include "libft.h"
 #include <stdio.h>
 
@@ -47,89 +63,16 @@ int main(void)
 	printf("%s", str);
 	return(0);
 }
-
 ```
-	
-<br>
-😎compilando...<br>
-	
-```bash
-$ make 
-# Na pasta raiz do projeto
-	
-$ gcc main.c libft.a && ./a.out	
-```
-	
-<br><br>	
-	
-<br><br>
-<div class="col-12">
-    
-# 📌 O que eu aprendi e como foi desenvolvido esse projeto?<br>
-<b>1) Conhecimento adquiridos para construir a libft</b><br>
-<li><a href="#entendendo">Entendendo melhor a Libft!</a></li>
-<ol>
-<br>
-<i>Mandatório:</i>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_split">ft_split</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strtrim">ft_strtrim</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_atoi">ft_atoi</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_itoa">ft_itoa</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strnstr">ft_strnstr</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strncmp">ft_strncmp</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memcmp">ft_memcmp</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_substr">ft_substr</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_join">ft_join</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlcat">ft_strlcat</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putnbr_fd">ft_putnbr_fd</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strmapi">ft_strmapi</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_striteri">ft_striteri</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlcpy">ft_strlcpy</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memcpy">memcpy</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memmove">ft_memmove</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strchr">ft_strchr</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strrchr">ft_strrchr</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memchr">ft_memchr</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strdup">ft_strdup</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_calloc">ft_calloc</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_memset">ft_memset</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_bzero">ft_bzero</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isalpha">ft_isalpha</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isdigit">ft_isdigit</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isalnum">ft_isalnum</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isascii">ft_isascii</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_isprint">ft_isprint</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_strlen">ft_strlen</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_toupper">ft_toupper</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_tolower">ft_tolower</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putstr_fd">ft_putstr_fd</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putendl_fd">ft_putendl_fd</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_putchar_fd">ft_putchar_fd</a></li>
-<br>
-<i>Bônus:</i>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstnew">ft_lstnew</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstadd_front">ft_lstadd_front</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstsize">ft_lstsize</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstlast">ft_lstlast</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstadd_back">ft_lstadd_back</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstdelone">ft_lstdelone</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstclear">ft_lstclear</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstiter">ft_lstiter</a></li>
-	<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ft_lstmap">ft_lstmap</a></li>
-</ol>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#biblioteca">Que parada é essa de bibliotecas em C?</a></li>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#makefile">Partiu dominar o 'Makefile'?</a></li>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#restrict">O que é 'restrict' antes das variáveis? é de comer?</a></li>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#ascii">Entenda de uma vez, o que é ASCII? Unicode? UTF-8,16 e bla bla bla?</a></li>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#bases">Partiu dominar a conversão entre bases? 😎👌</a></li>	
-
-<br>
-	
-<b>2) Brinde</b>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#outras">Outras Coisas Legais</a></li>
-<li><a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md#fontes">Fontes</a></li>
 </div>
-<br>	
+<br>
+<div class="col-12">
+	
+# 📌 O que eu aprendi e como foi desenvolvido esse projeto?<br>
+EM BREVE
+
+</div>
+<br>
 	
 <div class="col-12">
 	
@@ -175,24 +118,3 @@ $ gcc main.c libft.a && ./a.out
 <div class="col-12">
 <p>Não esqueça de dar um ⭐️ se você gostou, ou se esse repositório te ajudou de alguma maneira, isso irá me ajudar muito! Obrigado, você é top! 😁👍</p>
 </div>
-	
-
-	
-	
-	
-<br><br><br>
-<br><br><br>
-<br><br>
-	
-<div align="center">
-
-# 👑
-
-<br>
-<a href="https://youtu.be/D9G1VOjN_84"><img src="https://img.youtube.com/vi/D9G1VOjN_84/maxresdefault.jpg" width="100%"></a>
-<br><br>
-<i>Fique a vontade para conferir meu estudo sobre a 42-libft, clicando no icone bonitinho abaixo. <br> Ah! Se quiser deixe um comentário também: 😎</i><br><br>
-<a href="https://github.com/argelcapela/42-libft/blob/main/42-libft-study.md" target="_BLANK"><img src="https://i.imgur.com/O96qRkt.png" alt="conferir estudo"></a>
-<br>
-</div>   
-
